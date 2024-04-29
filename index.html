@@ -1,9 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>New Style Boutique</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
     </head>
-    <body></body>
+    <body>
+        <header>
+            <h1>New Style Boutique</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inici</a></li>
+                    <li><a href="#">Roba</a></li>
+                    <li><a href="#">Nosaltres</a></li>
+                    <li><a href="#">Contacte</a></li>
+                    <li><a href="#">Outfits</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="home-content">
+                <h4 class="home-title">
+                    DESCOBREIX LA NOSTRE COL.LECCIÓ DE ROBA SOSTENIBLE!
+                </h4>
+                <p class="description-home">
+                    Descobreix la nostra col·lecció de roba de moda per a tots.
+                    Des de roba casual fins a roba de festa, tenim tot el que
+                    necessites.
+                </p>
+                <a href="#" class="btn-buy">Comprar ara</a>
+            </div>
+        </section>
+        <footer>
+            <div class="sliding-container">
+                <a href="#">LA NOSTRE MÚSICA</a>
+                <a href="#">SOBRE NOSALTRES</a>
+                <a href="#">CONTACTEN'S</a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2 class="logo-text">
+                        <span aria-hidden="true">Nou Estil Botiga</span>
+                    </h2>
+                    <p>
+                        T'agrada la curiositat? No et perdis res sobre
+                        nosaltres. Subscriu-te al nostre Butlletí i rep un 10%
+                        de descompte en la teva pròxima compra.
+                    </p>
+                    <div class="contact">
+                        <span
+                            ><i class="fas fa-phone"></i> &nbsp;
+                            <span aria-label="Phone:">123-456-7890</span></span
+                        >
+                        <span
+                            ><i class="fas fa-envelope"></i> &nbsp;
+                            <span aria-label="Email:"
+                                >info@nouestil.com</span
+                            ></span
+                        >
+                    </div>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook"
+                            ><i class="fab fa-facebook"></i
+                        ></a>
+                        <a href="#" aria-label="Instagram"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="#" aria-label="Twitter"
+                            ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a href="#" aria-label="Youtube"
+                            ><i class="fab fa-youtube"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Enllaços ràpids</h2>
+                    <ul>
+                        <a href="#"><li>Esdeveniment</li></a>
+                        <a href="#"><li>Equip</li></a>
+                        <a href="#"><li>Galeria</li></a>
+                        <a href="#"><li>Termes i Condicions</li></a>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contacta'ns</h2>
+                    <form action="" method="post">
+                        <input
+                            type="email"
+                            name="email"
+                            class="text-input contact-input"
+                            placeholder="El teu correu electrònic..."
+                            aria-label="Your email"
+                        />
+                        <textarea
+                            rows="4"
+                            name="message"
+                            class="text-input contact-input"
+                            placeholder="El teu missatge..."
+                            aria-label="Your message"
+                        ></textarea>
+                        <button
+                            type="submit"
+                            class="btn btn-big contact-btn"
+                            aria-label="Send"
+                        >
+                            <i class="fas fa-envelope"></i>
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 [New Style Boutique]. Tots els drets reservats.
+                </p>
+                <p>Contacte | Política de Privadesa | Condicions d'ús</p>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+/* Encabezado */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;  
+}
+
+nav a {
+    color: black;
+    background-color: #FFDDD2; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    padding: 0 10px;
+}
+
+/* Body */
+
+.home {
+    display: flex;
+}
+
+.home-content {
+    flex: 1;
+    background-color: #F7EFE2;
+    border-radius: 5px;
+    padding: 20px;    
+}
+
+.home-title{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-home {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    background-color: #4CAF50;
+
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section .contact-form input,
+.footer-section .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+
+}
+
+.footer-section .contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #F7EFE2;
+}
+
+/* Redes Sociales */
+
+.socials a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Slider */
+
+.sliding-container {
+    display: flex;
+    overflow: hidden;
+    animation: slide 40s linear infinite;
+    height: 50px;
+    align-items: center;
+    background-color:  #F7EFE2;;
+}
+
+.sliding-container a {
+    display: flex;
+    margin-right: 70px; 
+    align-items: center;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
