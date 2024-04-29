@@ -13,22 +13,37 @@
     <body>
         <header>
             <h1>New Style Boutique</h1>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="#">Inici</a></li>
                     <li><a href="#">Roba</a></li>
                     <li><a href="#">Nosaltres</a></li>
                     <li><a href="#">Contacte</a></li>
                     <li><a href="#">Outfits</a></li>
+                    <li>
+                        <form action="/search" method="get">
+                            <input
+                                type="search"
+                                name="q"
+                                placeholder="Buscar..."
+                                aria-label="Search"
+                            />
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Account"
+                            ><i class="fas fa-user"></i
+                        ></a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <section class="home">
             <div class="home-content">
-                <h4 class="home-title">
-                    DESCOBREIX LA NOSTRE COL.LECCIÓ DE ROBA SOSTENIBLE!
-                </h4>
+                <h2 class="home-title">
+                    DESCOBREIX LA NOSTRE COL·LECCIÓ DE ROBA SOSTENIBLE!
+                </h2>
                 <p class="description-home">
                     Descobreix la nostra col·lecció de roba de moda per a tots.
                     Des de roba casual fins a roba de festa, tenim tot el que
@@ -37,6 +52,7 @@
                 <a href="#" class="btn-buy">Comprar ara</a>
             </div>
         </section>
+
         <footer>
             <div class="sliding-container">
                 <a href="#">LA NOSTRE MÚSICA</a>
@@ -83,10 +99,10 @@
                 <div class="footer-section links">
                     <h2>Enllaços ràpids</h2>
                     <ul>
-                        <a href="#"><li>Esdeveniment</li></a>
-                        <a href="#"><li>Equip</li></a>
-                        <a href="#"><li>Galeria</li></a>
-                        <a href="#"><li>Termes i Condicions</li></a>
+                        <li><a href="#">Esdeveniment</a></li>
+                        <li><a href="#">Equip</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Termes i Condicions</a></li>
                     </ul>
                 </div>
                 <div class="footer-section contact-form">
@@ -111,8 +127,7 @@
                             class="btn btn-big contact-btn"
                             aria-label="Send"
                         >
-                            <i class="fas fa-envelope"></i>
-                            Enviar
+                            <i class="fas fa-envelope"></i> Enviar
                         </button>
                     </form>
                 </div>
