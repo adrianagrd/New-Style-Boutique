@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>New Style Boutique</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav role="navigation" class="navigation">
+                <ul>
+                    <li><a href="#" lang="ca" class="btn-navbar">Inici</a></li>
+                    <li><a href="#" lang="ca" class="btn-navbar">Roba</a></li>
+                    <li>
+                        <a href="#" lang="ca" class="btn-navbar">Nosaltres</a>
+                    </li>
+                    <li>
+                        <a href="#" lang="ca" class="btn-navbar">Contacte</a>
+                    </li>
+                    <li>
+                        <a href="#" lang="ca" class="btn-navbar">Outfits</a>
+                    </li>
+                </ul>
+                <form action="/search" method="get" class="search-bar">
+                    <input
+                        type="search"
+                        name="q"
+                        class="search-input"
+                        placeholder="Buscar..."
+                        aria-label="Search"
+                    />
+
+                    <button
+                        type="submit"
+                        class="btn-search"
+                        aria-label="Subscribe"
+                    >
+                        <a
+                            href="#"
+                            aria-label="product-search"
+                            class="search-icon"
+                            ><i class="fas fa-search" alt="Search icon"></i
+                        ></a>
+                    </button>
+                </form>
+                <a href="#" aria-label="Account" class="account-icon"
+                    ><i class="fas fa-user" alt="User icon"></i
+                ></a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="home">
+                <div class="home-content">
+                    <h4 class="home-title">
+                        DESCOBREIX LA NOSTRE COL·LECCIÓ DE ROBA SOSTENIBLE!
+                    </h4>
+                    <p class="description-home">
+                        Descobreix la nostra col·lecció de roba de moda per a
+                        tots. Des de roba casual fins a roba de festa, tenim tot
+                        el que necessites.
+                    </p>
+                </div>
+            </section>
+            <a href="#" class="btn-buy" lang="ca">COMPRAR ARA</a>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <p class="footer-newsletter">
+                        T'agrada la curiositat? No et perdis res sobre
+                        nosaltres. Subscriu-te al nostre Butlletí i rep un 10%
+                        de descompte en la teva pròxima compra.
+                    </p>
+                    <form action="/subscribe" method="post">
+                        <input
+                            type="email"
+                            name="email"
+                            class="email-input"
+                            placeholder="Correu electrònic..."
+                            aria-label="Your email"
+                            required
+                        />
+                        <button
+                            type="submit"
+                            class="btn-subscribe"
+                            aria-label="Subscribe"
+                        >
+                            Enviar
+                        </button>
+                    </form>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook"
+                            ><i class="fab fa-facebook" alt="Facebook"></i
+                        ></a>
+                        <a href="#" aria-label="Instagram"
+                            ><i class="fab fa-instagram" alt="Instagram"></i
+                        ></a>
+                        <a href="#" aria-label="Twitter"
+                            ><i class="fab fa-twitter" alt="Twitter"></i
+                        ></a>
+                        <a href="#" aria-label="Youtube"
+                            ><i class="fab fa-youtube" alt="Youtube"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h4>VOLS SABER MÉS?</h4>
+                    <ul>
+                        <li><a href="#" lang="ca">Esdeveniment</a></li>
+                        <li><a href="#" lang="ca">Equip</a></li>
+                        <li><a href="#" lang="ca">Galeria</a></li>
+                        <li><a href="#" lang="ca">Termes i Condicions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 New Style Boutique. Tots els drets reservats.<br />
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

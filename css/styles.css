@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+html {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header */
+
+.header-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+body {
+    background-color: #edede9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+
+.navigation {
+    background-color: #d5bdaf;
+    color: #333;
+    padding: 20px;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+
+.account-icon {
+    display: flex;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.account-icon:hover {
+    color: #fff;
+    background-color: #575757;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 20px 10px;
+    background-color: #FFDDD2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li:hover {
+    background-color: #333;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 7px;
+    height: 37px;
+}
+
+.search-input{
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.search-icon {
+    color: #fff;    
+}
+
+.btn-search {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.btn-search:hover {
+    background-color: #9a9a9a;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Home pàgina */
+
+.home {
+    background-image: url('../images/header.png');
+    background-size: cover;
+    background-position: center;
+    height: 230px;    
+}
+
+.home-content {
+    padding: 60px 0px;
+}
+
+.home-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-home {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-buy {
+    display: flex;
+    background-color: #FFDDD2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    color: #fff;
+    box-shadow: inset 0 5px 5px #dbbcb2;
+
+}
+
+/* Footer */
+
+.footer-content {
+    background-color: #d5bdaf;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section .contact-form input,
+.footer-section .contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #F7EFE2;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section .contact-form button {
+    width: 100%;
+    background-color: #FFDDD2;
+    color: #333;
+    border: none;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #edede9;
+    font-size: small;
+}
+
+.footer-newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    width: 70%;
+    text-align: justify;
+}
+
+.email-input {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #F7EFE2;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-subscribe{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Socials */
+
+.socials {
+    display: flex;
+    margin-top: 20px;
+}
+
+.socials a {
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Slider */
+
+/* .sliding-container {
+    display: flex;
+    overflow: hidden;
+    animation: slide 40s linear infinite;
+    height: 50px;
+    align-items: center;
+    background-color: pink;
+    padding: 0 20px;
+}
+
+.sliding-container a {
+    display: flex;
+    margin-right: 70px; 
+    align-items: center;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+} */
