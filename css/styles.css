@@ -1,19 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #F7EFE2;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+html {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Header */
+
+.header-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+body {
+    background-color: #edede9;
+    margin: 0;
+    padding: 0;
+}
 
 /* Navigation */
 
 .navigation {
     background-color: #d5bdaf;
     color: #333;
-    width: 100%;
-    padding: 20px 20px;
+    padding: 20px;
     justify-content: space-between;
     text-align: center;
     display: flex;
@@ -21,9 +34,9 @@ body {
 
 .account-icon {
     display: flex;
+    margin-top: 5px;
     width: 40px;
     height: 40px;
-    margin: 10px 50px 0px 0px;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
@@ -38,7 +51,6 @@ body {
 
 nav ul {
     list-style-type: none;
-    margin: 20px;
     padding: 0;
 }
 
@@ -67,9 +79,8 @@ nav a:hover {
 
 .search-bar {
     display: flex;
-    margin-top: 13px;
-    height: 35px;
-    margin-left: 17vw;
+    margin-top: 7px;
+    height: 37px;
 }
 
 .search-input{
@@ -77,14 +88,39 @@ nav a:hover {
     padding: 10px;
     border: none;
     border-radius: 3px;
-    border: 1.5px solid #333;
+    margin-right: 10px;
+}
+
+.search-icon {
+    color: #fff;    
+}
+
+.btn-search {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.btn-search:hover {
+    background-color: #9a9a9a;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Home pàgina */
 
+.home {
+    background-image: url('../images/header.png');
+    background-size: cover;
+    background-position: center;
+    height: 230px;    
+}
+
 .home-content {
-    background-color: #F7EFE2;
-    padding: 20px;
+    padding: 60px 0px;
 }
 
 .home-title {
@@ -98,22 +134,28 @@ nav a:hover {
 }
 
 .btn-buy {
-    display: block;
-    margin: 20px auto;
+    display: flex;
     background-color: #FFDDD2;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     color: #333;
+    width: 120px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+.btn-buy:hover {
+    color: #fff;
+    box-shadow: inset 0 5px 5px #dbbcb2;
+
+}
+
 /* Footer */
 
 .footer-content {
-    background-color: #FFDDD2;
+    background-color: #d5bdaf;
     color: #333;
     padding: 20px;
     display: flex;
@@ -166,7 +208,7 @@ nav a:hover {
 
 .footer-bottom {
     text-align: center;
-    background-color: #F7EFE2;
+    background-color: #edede9;
     font-size: small;
 }
 
