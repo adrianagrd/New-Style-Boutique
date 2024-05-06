@@ -8,135 +8,112 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
     </head>
+
     <body>
         <header>
-            <h1>New Style Boutique</h1>
-            <nav role="navigation">
+            <nav role="navigation" class="navigation">
                 <ul>
-                    <li><a href="#">Inici</a></li>
-                    <li><a href="#">Roba</a></li>
-                    <li><a href="#">Nosaltres</a></li>
-                    <li><a href="#">Contacte</a></li>
-                    <li><a href="#">Outfits</a></li>
+                    <li><a href="#" lang="ca" class="btn-navbar">Inici</a></li>
+                    <li><a href="#" lang="ca" class="btn-navbar">Roba</a></li>
                     <li>
-                        <form action="/search" method="get">
-                            <input
-                                type="search"
-                                name="q"
-                                placeholder="Buscar..."
-                                aria-label="Search"
-                            />
-                        </form>
+                        <a href="#" lang="ca" class="btn-navbar">Nosaltres</a>
                     </li>
                     <li>
-                        <a href="#" aria-label="Account"
-                            ><i class="fas fa-user"></i
-                        ></a>
+                        <a href="#" lang="ca" class="btn-navbar">Contacte</a>
+                    </li>
+                    <li>
+                        <a href="#" lang="ca" class="btn-navbar">Outfits</a>
                     </li>
                 </ul>
+                <form action="/search" method="get" class="search-bar">
+                    <input
+                        type="search"
+                        name="q"
+                        class="search-input"
+                        placeholder="Buscar..."
+                        aria-label="Search"
+                    />
+                    <a href="#" aria-label="Account" class="search-icon"
+                        ><i class="fas fa-search" alt="Search icon"></i
+                    ></a>
+                </form>
+                <a href="#" aria-label="Account" class="account-icon"
+                    ><i class="fas fa-user" alt="User icon"></i
+                ></a>
             </nav>
         </header>
 
-        <section class="home">
-            <div class="home-content">
-                <h2 class="home-title">
-                    DESCOBREIX LA NOSTRE COL·LECCIÓ DE ROBA SOSTENIBLE!
-                </h2>
-                <p class="description-home">
-                    Descobreix la nostra col·lecció de roba de moda per a tots.
-                    Des de roba casual fins a roba de festa, tenim tot el que
-                    necessites.
-                </p>
-                <a href="#" class="btn-buy">Comprar ara</a>
-            </div>
-        </section>
-
+        <main>
+            <section class="home">
+                <div class="home-content">
+                    <h4 class="home-title">
+                        DESCOBREIX LA NOSTRE COL·LECCIÓ DE ROBA SOSTENIBLE!
+                    </h4>
+                    <p class="description-home">
+                        Descobreix la nostra col·lecció de roba de moda per a
+                        tots. Des de roba casual fins a roba de festa, tenim tot
+                        el que necessites.
+                    </p>
+                    <a href="#" class="btn-buy" lang="ca">Comprar ara</a>
+                </div>
+            </section>
+        </main>
         <footer>
-            <div class="sliding-container">
-                <a href="#">LA NOSTRE MÚSICA</a>
-                <a href="#">SOBRE NOSALTRES</a>
-                <a href="#">CONTACTEN'S</a>
-            </div>
             <div class="footer-content">
                 <div class="footer-section about">
-                    <h2 class="logo-text">
-                        <span aria-hidden="true">Nou Estil Botiga</span>
-                    </h2>
-                    <p>
+                    <p class="footer-newsletter">
                         T'agrada la curiositat? No et perdis res sobre
                         nosaltres. Subscriu-te al nostre Butlletí i rep un 10%
                         de descompte en la teva pròxima compra.
                     </p>
-                    <div class="contact">
-                        <span
-                            ><i class="fas fa-phone"></i> &nbsp;
-                            <span aria-label="Phone:">123-456-7890</span></span
+                    <form action="/subscribe" method="post">
+                        <input
+                            type="email"
+                            name="email"
+                            class="email-input"
+                            placeholder="Correu electrònic..."
+                            aria-label="Your email"
+                            required
+                        />
+                        <button
+                            type="submit"
+                            class="btn-subscribe"
+                            aria-label="Subscribe"
                         >
-                        <span
-                            ><i class="fas fa-envelope"></i> &nbsp;
-                            <span aria-label="Email:"
-                                >info@nouestil.com</span
-                            ></span
-                        >
-                    </div>
+                            Enviar
+                        </button>
+                    </form>
                     <div class="socials">
                         <a href="#" aria-label="Facebook"
-                            ><i class="fab fa-facebook"></i
+                            ><i class="fab fa-facebook" alt="Facebook"></i
                         ></a>
                         <a href="#" aria-label="Instagram"
-                            ><i class="fab fa-instagram"></i
+                            ><i class="fab fa-instagram" alt="Instagram"></i
                         ></a>
                         <a href="#" aria-label="Twitter"
-                            ><i class="fab fa-twitter"></i
+                            ><i class="fab fa-twitter" alt="Twitter"></i
                         ></a>
                         <a href="#" aria-label="Youtube"
-                            ><i class="fab fa-youtube"></i
+                            ><i class="fab fa-youtube" alt="Youtube"></i
                         ></a>
                     </div>
                 </div>
                 <div class="footer-section links">
-                    <h2>Enllaços ràpids</h2>
+                    <h4>VOLS SABER MÉS?</h4>
                     <ul>
-                        <li><a href="#">Esdeveniment</a></li>
-                        <li><a href="#">Equip</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Termes i Condicions</a></li>
+                        <li><a href="#" lang="ca">Esdeveniment</a></li>
+                        <li><a href="#" lang="ca">Equip</a></li>
+                        <li><a href="#" lang="ca">Galeria</a></li>
+                        <li><a href="#" lang="ca">Termes i Condicions</a></li>
                     </ul>
-                </div>
-                <div class="footer-section contact-form">
-                    <h2>Contacta'ns</h2>
-                    <form action="" method="post">
-                        <input
-                            type="email"
-                            name="email"
-                            class="text-input contact-input"
-                            placeholder="El teu correu electrònic..."
-                            aria-label="Your email"
-                        />
-                        <textarea
-                            rows="4"
-                            name="message"
-                            class="text-input contact-input"
-                            placeholder="El teu missatge..."
-                            aria-label="Your message"
-                        ></textarea>
-                        <button
-                            type="submit"
-                            class="btn btn-big contact-btn"
-                            aria-label="Send"
-                        >
-                            <i class="fas fa-envelope"></i> Enviar
-                        </button>
-                    </form>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>
-                    &copy; 2024 [New Style Boutique]. Tots els drets reservats.
+                    &copy; 2024 New Style Boutique. Tots els drets reservats.<br />
                 </p>
-                <p>Contacte | Política de Privadesa | Condicions d'ús</p>
             </div>
         </footer>
     </body>

@@ -5,22 +5,55 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #FFDDD2;
+/* Header */
+
+/* Navigation */
+
+.navigation {
+    background-color: #d5bdaf;
     color: #333;
-    padding: 10px 0;
+    width: 100%;
+    padding: 20px 20px;
+    justify-content: space-between;
     text-align: center;
+    display: flex;
+}
+
+.account-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: 10px 50px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.account-icon:hover {
+    color: #fff;
+    background-color: #575757;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 
 nav li {
     display: inline;
-    margin: 0 10px;
+    margin: 20px 10px;
+    background-color: #FFDDD2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li:hover {
+    background-color: #333;
 }
 
 nav a {
@@ -28,9 +61,40 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 13px;
+    height: 35px;
+    margin-left: 17vw;
+}
+
+.search-input{
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    border: 1.5px solid #333;
+}
+
+/* Home pàgina */
+
 .home-content {
     background-color: #F7EFE2;
     padding: 20px;
+}
+
+.home-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-home {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .btn-buy {
@@ -45,6 +109,8 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Footer */
 
 .footer-content {
     background-color: #FFDDD2;
@@ -100,8 +166,43 @@ nav a {
 
 .footer-bottom {
     text-align: center;
-    padding: 10px;
     background-color: #F7EFE2;
+    font-size: small;
+}
+
+.footer-newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    width: 70%;
+    text-align: justify;
+}
+
+.email-input {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #F7EFE2;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-subscribe{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Socials */
+
+.socials {
+    display: flex;
+    margin-top: 20px;
 }
 
 .socials a {
@@ -109,16 +210,16 @@ nav a {
     margin-right: 10px;
 }
 
-
 /* Slider */
 
-.sliding-container {
+/* .sliding-container {
     display: flex;
     overflow: hidden;
     animation: slide 40s linear infinite;
     height: 50px;
     align-items: center;
-    background-color:  #F7EFE2;
+    background-color: pink;
+    padding: 0 20px;
 }
 
 .sliding-container a {
@@ -130,4 +231,4 @@ nav a {
 @keyframes slide {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
-}
+} */
