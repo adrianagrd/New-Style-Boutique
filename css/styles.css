@@ -50,6 +50,7 @@ body {
 }
 
 nav ul {
+    text-decoration: none;
     list-style-type: none;
     padding: 0;
 }
@@ -62,19 +63,11 @@ nav li {
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-}
-
-nav li:hover {
-    background-color: #333;
-}
+} 
 
 nav a {
-    color: #333;
     text-decoration: none;
-}
-
-nav a:hover {
-    color: #fff;
+    color: #333;
 }
 
 .search-bar {
@@ -182,6 +175,46 @@ nav a:hover {
     object-fit: cover;
     bottom: 130px;
     left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.jeans-img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    bottom: 200px;
+    left: 10%; 
+    transform: translateX(-50%); 
+}
+
+.shoes-img {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    bottom: 130px;
+    left: 10%; 
+    transform: translateX(-50%); 
+}
+
+.hoodie-img {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    bottom: 200px;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.sweatshirt-img {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    bottom: 130px;
+    left: 90%; 
     transform: translateX(-50%); 
 }
 
