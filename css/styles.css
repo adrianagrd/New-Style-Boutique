@@ -26,15 +26,18 @@ body {
 .navigation {
     background-color: #d5bdaf;
     color: #333;
-    padding: 20px;
+    padding: 10px;
     justify-content: space-between;
     text-align: center;
     display: flex;
+    align-items: center; 
+    overflow: hidden;
 }
 
 .account-icon {
     display: flex;
     margin-top: 5px;
+    margin-right: 10px;
     width: 40px;
     height: 40px;
     justify-content: center;
@@ -50,14 +53,16 @@ body {
 }
 
 nav ul {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     list-style-type: none;
     padding: 0;
 }
 
-nav li {
+.btn-navbar {
     display: inline;
-    margin: 20px 10px;
+    margin: 0px 10px;
     background-color: #FFDDD2;
     padding: 10px 20px;
     border-radius: 5px;
@@ -65,9 +70,21 @@ nav li {
     align-items: center;
 } 
 
-nav a {
+.link-navbar {
     text-decoration: none;
     color: #333;
+}
+
+.logo-navbar {
+    display: inline-flex;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
+    margin-right: 20px;
+}
+
+.logo-navbar img {
+    width: auto; 
+    height: 50px; 
 }
 
 .search-bar {
@@ -125,7 +142,7 @@ nav a {
 .description-home {
     text-align: center;
     margin-bottom: 20px;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -159,52 +176,48 @@ nav a {
 /* Imatges roba */
 
 .sticker-img {
-    position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
-    bottom: 200px;
-    left: 90%; 
-    transform: translateX(-50%); 
 }
 
 .skirt-img {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
-    bottom: 130px;
+    bottom: 140px;
     left: 50%; 
     transform: translateX(-50%); 
 }
 
 .jeans-img {
     position: absolute;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    bottom: 200px;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    bottom: 20px;
     left: 10%; 
     transform: translateX(-50%); 
 }
 
 .shoes-img {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    bottom: 130px;
-    left: 10%; 
+    bottom: 90px;
+    left: 13%; 
     transform: translateX(-50%); 
 }
 
 .hoodie-img {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
     object-fit: cover;
-    bottom: 200px;
-    left: 50%; 
+    bottom: 10px;
+    left: 80%; 
     transform: translateX(-50%); 
 }
 
@@ -213,8 +226,28 @@ nav a {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    bottom: 130px;
-    left: 90%; 
+    bottom: 50px;
+    left: 30%; 
+    transform: translateX(-50%); 
+}
+
+.totebag-img {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    bottom: 75px;
+    left: 86%; 
+    transform: translateX(-50%) rotate(20deg); 
+}
+
+.hat-img {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    bottom: 80px;
+    left: 57%; 
     transform: translateX(-50%); 
 }
 
