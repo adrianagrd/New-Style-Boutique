@@ -5,8 +5,9 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
-        padding: 10px;
         
+
+
     }
     .grid-item {
         display: flex;
@@ -27,7 +28,6 @@
         align-items: center;
         flex-direction: column;
     }
-      
     /* boton comprar */
     .button-buy {
     width: 180px;
