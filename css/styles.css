@@ -89,8 +89,8 @@ nav ul {
 
 .search-bar {
     display: flex;
-    margin-top: 5px;
-    height: 39px;
+    margin-top: 4px;
+    height: 38px;
 }
 
 .search-input{
@@ -246,8 +246,8 @@ nav ul {
     width: 110px;
     height: 110px;
     object-fit: cover;
-    bottom: 55px;
-    left: 52%; 
+    bottom: 65px;
+    left: 53%; 
     transform: translateX(-50%); 
 }
 
@@ -405,3 +405,215 @@ nav ul {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
 } */
+
+/* Responsive code */
+
+@media screen and (max-width: 768px) {
+    .logo-navbar img {
+        width: 40px; 
+        height: 40px; 
+    }
+
+    .search-input {
+        width: 150px;
+    }
+
+    .search-bar {
+        margin-top: 5px;
+    }
+
+    .btn-navbar {
+        padding: 10px 15px;
+    }
+
+    .btn-buy {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin-right: 0px;
+    }
+
+    .footer-section ul {
+        margin-right: 0px;
+    }
+
+    .footer-section .contact-form input,
+    .footer-section .contact-form textarea {
+        width: calc(100% - 10px);
+    }
+
+    .footer-section .contact-form button {
+        padding: 10px 0;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .socials {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search-input {
+        width: 100px;
+    }
+
+    .search-bar {
+        margin-top: 5px;
+    }
+
+    .btn-navbar {
+        padding: 10px 15px;
+    }
+
+    .btn-buy {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin-right: 0px;
+    }
+
+    .footer-section ul {
+        margin-right: 0px;
+    }
+
+    .footer-section .contact-form input,
+    .footer-section .contact-form textarea {
+        width: calc(100% - 10px);
+    }
+
+    .footer-section .contact-form button {
+        padding: 10px 0;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .socials {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .search-input {
+        width: 80px;
+    }
+
+    .search-bar {
+        margin-top: 5px;
+    }
+
+    .btn-navbar {
+        padding: 10px 15px;
+    }
+
+    .btn-buy {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin-right: 0px;
+    }
+
+    .footer-section ul {
+        margin-right: 0px;
+    }
+
+    .footer-section .contact-form input,
+    .footer-section .contact-form textarea {
+        width: calc(100% - 10px);
+    }
+
+    .footer-section .contact-form button {
+        padding: 10px 0;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .socials {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .search-input {
+        width: 60px;
+    }
+
+    .search-bar {
+        margin-top: 5px;
+    }
+
+    .btn-navbar {
+        padding: 10px 15px;
+    }
+
+    .btn-buy {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin-right: 0px;
+    }
+
+    .footer-section ul {
+        margin-right: 0px;
+    }
+
+    .footer-section .contact-form input,
+    .footer-section .contact-form textarea {
+        width: calc(100% - 10px);
+    }
+
+    .footer-section .contact-form button {
+        padding: 10px 0;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .socials {
+        font-size: 15px;
+    }
+}
+
