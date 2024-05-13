@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Style Boutique</title>
+    <link rel="icon" href="../images/sticker-vintage.png" type="image/x-icon" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/outifts.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/outfits.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
@@ -21,28 +24,54 @@
   </head>
   <body>
     <header>
-      <h1>New Style Boutique</h1>
-      <nav role="navigation">
+      <nav role="navigation" class="navigation">
         <ul>
-          <li><a href="#">Inici</a></li>
-          <li><a href="#">Roba</a></li>
-          <li><a href="#">Nosaltres</a></li>
-          <li><a href="#">Contacte</a></li>
-          <li><a href="#">Outfits</a></li>
-          <li>
-            <form action="/search" method="get">
-              <input
-                type="search"
-                name="q"
-                placeholder="Buscar..."
-                aria-label="Search"
+          <li class="logo-navbar">
+            <a href="index.html" lang="ca" class="logo-navbar">
+              <img
+                src="../images/sticker-vintage.png"
+                alt="Logo de New Style Boutique"
+                class="sticker-img"
               />
-            </form>
+            </a>
           </li>
-          <li>
-            <a href="#" aria-label="Account"><i class="fas fa-user"></i></a>
+          <li class="btn-navbar">
+            <a href="index.html" lang="ca" class="link-navbar">Inici</a>
+          </li>
+          <li class="btn-navbar">
+            <a href="roba.html" lang="ca" class="link-navbar">Roba</a>
+          </li>
+          <li class="btn-navbar">
+            <a href="nosaltres.html" lang="ca" class="link-navbar">Nosaltres</a>
+          </li>
+          <li class="btn-navbar">
+            <a href="contacte.html" lang="ca" class="link-navbar">Contacte</a>
+          </li>
+          <li class="btn-navbar">
+            <a href="outfits.html" lang="ca" class="link-navbar">Outfits</a>
           </li>
         </ul>
+        <form action="/search" method="get" class="search-bar">
+          <input
+            type="search"
+            name="q"
+            class="search-input"
+            placeholder="Buscar..."
+            aria-label="Search"
+          />
+
+          <button type="submit" class="btn-search" aria-label="Subscribe">
+            <a
+              href="javascript:;"
+              aria-label="product-search"
+              class="search-icon"
+              ><i class="fas fa-search" alt="Search icon"></i
+            ></a>
+          </button>
+        </form>
+        <a href="javascript:;" aria-label="Account" class="account-icon"
+          ><i class="fas fa-user" alt="User icon"></i
+        ></a>
       </nav>
     </header>
     <body>
@@ -156,245 +185,59 @@
         </div>
       </div>
     </body>
-    <footer>
-      <div class="sliding-container">
-        <a href="#">LA NOSTRE MÚSICA</a>
-        <a href="#">SOBRE NOSALTRES</a>
-        <a href="#">CONTACTEN'S</a>
-      </div>
-      <div class="footer-content">
-        <div class="footer-section about">
-          <h2 class="logo-text">
-            <span aria-hidden="true">Nou Estil Botiga</span>
-          </h2>
-          <p>
-            T'agrada la curiositat? No et perdis res sobre nosaltres.
-            Subscriu-te al nostre Butlletí i rep un 10% de descompte en la teva
-            pròxima compra.
-          </p>
-          <div class="contact">
-            <span
-              ><i class="fas fa-phone"></i> &nbsp;
-              <span aria-label="Phone:">123-456-7890</span></span
-            >
-            <span
-              ><i class="fas fa-envelope"></i> &nbsp;
-              <span aria-label="Email:">info@nouestil.com</span></span
-            >
-          </div>
-          <div class="socials">
-            <a href="#" aria-label="Facebook"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="footer-section links">
-          <h2>Enllaços ràpids</h2>
-          <ul>
-            <li><a href="#">Esdeveniment</a></li>
-            <li><a href="#">Equip</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Termes i Condicions</a></li>
-          </ul>
-        </div>
-        <div class="footer-section contact-form">
-          <h2>Contacta'ns</h2>
-          <form action="" method="post">
-            <input
-              type="email"
-              name="email"
-              class="text-input contact-input"
-              placeholder="El teu correu electrònic..."
-              aria-label="Your email"
-            />
-            <textarea
-              rows="4"
-              name="message"
-              class="text-input contact-input"
-              placeholder="El teu missatge..."
-              aria-label="Your message"
-            ></textarea>
-            <button
-              type="submit"
-              class="btn btn-big contact-btn"
-              aria-label="Send"
-            >
-              <i class="fas fa-envelope"></i> Enviar
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 [New Style Boutique]. Tots els drets reservats.</p>
-        <p>Contacte | Política de Privadesa | Condicions d'ús</p>
-      </div>
-    </footer>
   </body>
-</html>
-
-<!DOCTYPE html>
-<html lang="ca">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>New Style Boutique</title>
-        <link
-            rel="icon"
-            href="../images/sticker-vintage.png"
-            type="image/x-icon"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <link rel="stylesheet" href="../css/styles.css" />
-    </head>
-    <body>
-        <header>
-            <nav role="navigation" class="navigation">
-                <ul>
-                    <li class="logo-navbar">
-                        <a href="index.html" lang="ca" class="logo-navbar">
-                            <img
-                                src="../images/sticker-vintage.png"
-                                alt="Logo de New Style Boutique"
-                                class="sticker-img"
-                            />
-                        </a>
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="index.html" lang="ca" class="link-navbar"
-                            >Inici</a
-                        >
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="roba.html" lang="ca" class="link-navbar"
-                            >Roba</a
-                        >
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="nosaltres.html" lang="ca" class="link-navbar"
-                            >Nosaltres</a
-                        >
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="contacte.html" lang="ca" class="link-navbar"
-                            >Contacte</a
-                        >
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="outfits.html" lang="ca" class="link-navbar"
-                            >Outfits</a
-                        >
-                    </li>
-                </ul>
-                <form action="/search" method="get" class="search-bar">
-                    <input
-                        type="search"
-                        name="q"
-                        class="search-input"
-                        placeholder="Buscar..."
-                        aria-label="Search"
-                    />
-
-                    <button
-                        type="submit"
-                        class="btn-search"
-                        aria-label="Subscribe"
-                    >
-                        <a
-                            href="javascript:;"
-                            aria-label="product-search"
-                            class="search-icon"
-                            ><i class="fas fa-search" alt="Search icon"></i
-                        ></a>
-                    </button>
-                </form>
-                <a href="javascript:;" aria-label="Account" class="account-icon"
-                    ><i class="fas fa-user" alt="User icon"></i
-                ></a>
-            </nav>
-        </header>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section about">
-                    <p class="footer-newsletter">
-                        T'agrada la curiositat? No et perdis res sobre
-                        nosaltres. Subscriu-te al nostre Butlletí i rep un 10%
-                        de descompte en la teva pròxima compra.
-                    </p>
-                    <form action="/subscribe" method="post">
-                        <input
-                            type="email"
-                            name="email"
-                            class="email-input"
-                            placeholder="Correu electrònic..."
-                            aria-label="Your email"
-                            required
-                        />
-                        <button
-                            type="submit"
-                            class="btn-subscribe"
-                            aria-label="Subscribe"
-                        >
-                            Enviar
-                        </button>
-                    </form>
-                    <div class="socials">
-                        <a href="https://www.facebook.com" aria-label="Facebook"
-                            ><i
-                                class="fab fa-facebook"
-                                aria-label="Visita'ns a Facebook"
-                            ></i
-                        ></a>
-                        <a
-                            href="https://www.instagram.com"
-                            aria-label="Instagram"
-                            ><i
-                                class="fab fa-instagram"
-                                aria-label="Visita'ns a Instagram"
-                            ></i
-                        ></a>
-                        <a href="https://www.twitter.com" aria-label="Twitter"
-                            ><i
-                                class="fab fa-twitter"
-                                aria-label="Visita'ns a Twitter"
-                            ></i
-                        ></a>
-                        <a href="https://www.youtube.com" aria-label="Youtube"
-                            ><i
-                                class="fab fa-youtube"
-                                aria-label="Visita'ns a Youtube"
-                            ></i
-                        ></a>
-                    </div>
-                </div>
-                <div class="footer-section links">
-                    <h4>VOLS SABER MÉS?</h4>
-                    <ul>
-                        <li>
-                            <a href="javascript:;" lang="ca">Esdeveniment</a>
-                        </li>
-                        <li><a href="javascript:;" lang="ca">Equip</a></li>
-                        <li><a href="javascript:;" lang="ca">Galeria</a></li>
-                        <li>
-                            <a href="javascript:;" lang="ca"
-                                >Termes i Condicions</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>
-                    &copy; 2024 New Style Boutique. Tots els drets reservats.<br />
-                </p>
-            </div>
-        </footer>
-    </body>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <p class="footer-newsletter">
+          T'agrada la curiositat? No et perdis res sobre nosaltres. Subscriu-te
+          al nostre Butlletí i rep un 10% de descompte en la teva pròxima
+          compra.
+        </p>
+        <form action="/subscribe" method="post">
+          <input
+            type="email"
+            name="email"
+            class="email-input"
+            placeholder="Correu electrònic..."
+            aria-label="Your email"
+            required
+          />
+          <button type="submit" class="btn-subscribe" aria-label="Subscribe">
+            Enviar
+          </button>
+        </form>
+        <div class="socials">
+          <a href="https://www.facebook.com" aria-label="Facebook"
+            ><i class="fab fa-facebook" aria-label="Visita'ns a Facebook"></i
+          ></a>
+          <a href="https://www.instagram.com" aria-label="Instagram"
+            ><i class="fab fa-instagram" aria-label="Visita'ns a Instagram"></i
+          ></a>
+          <a href="https://www.twitter.com" aria-label="Twitter"
+            ><i class="fab fa-twitter" aria-label="Visita'ns a Twitter"></i
+          ></a>
+          <a href="https://www.youtube.com" aria-label="Youtube"
+            ><i class="fab fa-youtube" aria-label="Visita'ns a Youtube"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-section links">
+        <h4>VOLS SABER MÉS?</h4>
+        <ul>
+          <li>
+            <a href="javascript:;" lang="ca">Esdeveniment</a>
+          </li>
+          <li><a href="javascript:;" lang="ca">Equip</a></li>
+          <li><a href="javascript:;" lang="ca">Galeria</a></li>
+          <li>
+            <a href="javascript:;" lang="ca">Termes i Condicions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 New Style Boutique. Tots els drets reservats.<br /></p>
+    </div>
+  </footer>
 </html>
