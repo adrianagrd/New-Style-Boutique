@@ -1,0 +1,102 @@
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.contact {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.contact-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.address {
+    width: 65%;
+    margin-top: 30px;
+}
+
+.contact-icons{
+    margin-right: 7px;
+
+}
+
+.contact-subtitle {
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-color: #585858; 
+    text-underline-offset: 0.3em; 
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-info, .map-info {
+    width: 50%;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.map-iframe {
+    width: 500px;
+    height: 240px;
+    border: none;
+    border-radius: 5px;
+}
+
+.mailto{
+    text-decoration: underline;
+    color: #000;
+
+}
+
+.mailto:hover{
+    color: #007bff;
+}
+
+.hours-list-parent {
+    display: flex;
+}
+
+.hours-list1{
+    width: 230px;
+    list-style-type: none; 
+    text-align: left;
+    padding: 0px 20px 0px 0px;
+}
+
+.hours-list2 {
+    width: 230px;
+    list-style-type: none; 
+    padding: 32px 20px;
+    text-align: left;
+}
+
+.hours {
+    padding: 10px 0; 
+    border-bottom: 1px solid #ddd; 
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.hours-title{    
+    font-size: 1em;
+}
