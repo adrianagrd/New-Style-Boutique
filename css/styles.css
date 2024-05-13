@@ -66,6 +66,8 @@ nav ul {
     background-color: #FFDDD2;
     padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
+    color: #000;
     justify-content: center;
     align-items: center;
 } 
