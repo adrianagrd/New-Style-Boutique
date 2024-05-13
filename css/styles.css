@@ -387,7 +387,7 @@ nav ul {
 
 /* Slider */
 
-/* .sliding-container {
+.sliding-container {
     display: flex;
     overflow: hidden;
     animation: slide 40s linear infinite;
@@ -395,18 +395,19 @@ nav ul {
     align-items: center;
     background-color: pink;
     padding: 0 20px;
+    width: 100%;
 }
 
-.sliding-container a {
+.sliding-text {
     display: flex;
-    margin-right: 70px; 
+    margin-right: 50px; 
     align-items: center;
 }
 
 @keyframes slide {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
-} */
+}
 
 /* Responsive code */
 
