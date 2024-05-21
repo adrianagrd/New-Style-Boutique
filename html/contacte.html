@@ -107,14 +107,14 @@
                                 <a class="mailto">NewStyleBoutique@gmail.com</a>
                             </p>
                             <hr class="line-separator" />
+                            <h2 class="contact-subtitle">
+                                Formulari de Contacte
+                            </h2>
                             <form
                                 action="/contact"
                                 method="post"
                                 class="contact-form"
                             >
-                                <h2 class="contact-subtitle">
-                                    Envia'ns un Missatge
-                                </h2>
                                 <label for="name" class="contact-label"
                                     >Nom i Cognoms</label
                                 >
@@ -122,7 +122,7 @@
                                     type="text"
                                     name="name"
                                     class="contact-input"
-                                    placeholder="Nom..."
+                                    placeholder="Nom i Cognoms"
                                     required
                                 />
                                 <label for="email" class="contact-label"
@@ -132,7 +132,7 @@
                                     type="email"
                                     name="email"
                                     class="contact-input"
-                                    placeholder="Correu..."
+                                    placeholder="Correu electrònic"
                                     required
                                 />
                                 <label for="message" class="contact-label"
@@ -164,9 +164,12 @@
                                 <div class="hours-list-container1">
                                     <ul class="hours-list1">
                                         <div class="hours-title">
-                                            <i class="fas fa-clock clock">
-                                                Horaris:
-                                            </i>
+                                            <p class="title-hour">
+                                                Horari
+                                                <i
+                                                    class="fas fa-clock clock"
+                                                ></i>
+                                            </p>
                                         </div>
                                         <li class="hours">
                                             Dilluns - 10:00h a 20:00h
@@ -182,7 +185,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <hr />
+                                <hr class="line-separator2" />
                                 <div class="hours-list-container2">
                                     <ul class="hours-list2">
                                         <li class="hours">

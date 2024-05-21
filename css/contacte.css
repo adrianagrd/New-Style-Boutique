@@ -68,20 +68,26 @@ main {
 }
 
 .hours-list-parent {
+    margin-top: 20px !important;
     display: flex;
+    padding: 0px 15px;
+    border-radius: 5px;
+    width: 110%;
+    border: 1px solid #ccc;
+    
 }
 
 .hours-list1{
     width: 230px;
     list-style-type: none; 
     text-align: left;
-    padding: 0px 20px 0px 0px;
+    padding: 3px 20px 0px 0px;
 }
 
 .hours-list2 {
-    width: 230px;
+    width: 200px;
     list-style-type: none; 
-    padding: 32px 20px;
+    padding: 33px 20px;
     text-align: left;
 }
 
@@ -94,14 +100,21 @@ main {
 
 .hours-title{    
     font-size: 1em;
+    margin-top: -10px;
+}
+
+.title-hour {
+    font-size: 1em;
+    margin-top: 10px;
 }
 
 /* Formulari de contacte */
 
 .contact-form {
-    background-color: #FFDDD2;
+    background-color: #9b8678;
     display: flex;
     flex-direction: column;
+    border: 1px solid #ccc;
     width: 55%;
     margin-top: 32px;
     padding: 15px;
@@ -111,6 +124,7 @@ main {
 .contact-label {
     font-size: 1em;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .contact-input {
@@ -118,7 +132,7 @@ main {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .btn-contact {
@@ -133,21 +147,23 @@ main {
 
 }
 
-.btn-contact:hover {
-    background-color: #0056b3;
-}
-
 .line-separator {
     border-top: 1px solid #ccc;
-    margin: 20px 0;
+    margin: 36px 0px 0px 0px;
     width: 21.6vw;
 }
 
+.line-separator2 {
+    border-top: 1px solid #ccc;
+    height: 220px;
+}
+
 .contact-form h2 {
-    margin-top: -2px;
+    margin-top: 7px;
     margin-bottom: 20px;
     font-size: 18px;
     align-items: center;
     display: flex;
+    color: #fff;
     justify-content: center;
 }
