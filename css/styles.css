@@ -281,6 +281,7 @@ nav ul {
 .hoodie-img, .sweatshirt-img, .hat-img {
     animation: rotate-left 2s infinite linear;
 }
+
 /* Footer */
 
 .footer-content {
