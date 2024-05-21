@@ -146,4 +146,8 @@ main {
 .contact-form h2 {
     margin-top: -2px;
     margin-bottom: 20px;
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
