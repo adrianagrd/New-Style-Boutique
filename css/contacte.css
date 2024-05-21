@@ -2,6 +2,7 @@
 main {
     width: 80%;
     margin: auto;
+    padding: 20px;
 }
 
 .contact {
@@ -63,13 +64,7 @@ main {
 }
 
 .mailto{
-    text-decoration: underline;
     color: #000;
-
-}
-
-.mailto:hover{
-    color: #007bff;
 }
 
 .hours-list-parent {
@@ -99,4 +94,56 @@ main {
 
 .hours-title{    
     font-size: 1em;
+}
+
+/* Formulari de contacte */
+
+.contact-form {
+    background-color: #FFDDD2;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-top: 32px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contact-label {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.contact-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.btn-contact {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #333;
+
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
+
+.line-separator {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    width: 21.6vw;
+}
+
+.contact-form h2 {
+    margin-top: -2px;
+    margin-bottom: 20px;
 }

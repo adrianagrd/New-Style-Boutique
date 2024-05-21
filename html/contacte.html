@@ -106,6 +106,52 @@
 
                                 <a class="mailto">NewStyleBoutique@gmail.com</a>
                             </p>
+                            <hr class="line-separator" />
+                            <form
+                                action="/contact"
+                                method="post"
+                                class="contact-form"
+                            >
+                                <h2 class="contact-subtitle">
+                                    Envia'ns un Missatge
+                                </h2>
+                                <label for="name" class="contact-label"
+                                    >Nom i Cognoms</label
+                                >
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="contact-input"
+                                    placeholder="Nom..."
+                                    required
+                                />
+                                <label for="email" class="contact-label"
+                                    >Correu electrònic</label
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="contact-input"
+                                    placeholder="Correu..."
+                                    required
+                                />
+                                <label for="message" class="contact-label"
+                                    >Missatge</label
+                                >
+                                <textarea
+                                    name="message"
+                                    class="contact-input"
+                                    placeholder="Missatge..."
+                                    required
+                                ></textarea>
+                                <button
+                                    type="submit"
+                                    class="btn-contact"
+                                    aria-label="Send"
+                                >
+                                    Enviar
+                                </button>
+                            </form>
                         </div>
                         <div class="map-info">
                             <iframe
