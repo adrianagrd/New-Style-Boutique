@@ -273,12 +273,9 @@ nav ul {
 }
 
 .flowers-img {
-    position: relative;
-    width: 80px;
-    height: 80px;
+    width: 17%;
     object-fit: cover;
-    bottom: -70px;
-    left: 93%; 
+    left: 73%; 
 }
 
 @keyframes rotate-right {
@@ -306,7 +303,7 @@ nav ul {
 .footer-content {
     background-color: #d5bdaf;
     color: #333;
-    padding: 20px;
+    padding: 0px 0px 0px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -314,7 +311,12 @@ nav ul {
 
 .footer-section {
     flex: 1;
+    padding-top: 10px;
     margin-right: 20px;
+}
+
+.footer-section h4 {
+    margin-top: 25px;
 }
 
 .footer-section ul {
@@ -370,6 +372,7 @@ nav ul {
     align-items: center;
     font-size: 13px;
     width: 70%;
+    padding-top: 20px;
     text-align: justify;
 }
 
@@ -398,14 +401,13 @@ nav ul {
     display: flex;
     margin-top: 20px;
     font-size: 17px;
+    padding-bottom: 10px;
 }
 
 .socials a {
     color: #333;
     margin-right: 10px;
 }
-
-/* Slider */
 
 /* Slider */
 
@@ -421,7 +423,6 @@ nav ul {
 
 .sliding-text {
     display: flex;
-    border: 2px solid #333;
     overflow: hidden;
     margin-right: 50px; 
     align-items: center;
