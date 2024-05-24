@@ -18,7 +18,7 @@
     </head>
     <body>
         <header>
-            <nav role="navigation" class="navigation">
+            <nav class="navigation">
                 <ul>
                     <li class="logo-navbar">
                         <a href="index.html" lang="ca" class="logo-navbar">
@@ -69,17 +69,16 @@
                         class="btn-search"
                         aria-label="Subscribe"
                     >
-                        <a
-                            href="javascript:;"
-                            aria-label="product-search"
-                            class="search-icon"
-                            ><i class="fas fa-search" alt="Search icon"></i
-                        ></a>
+                        <i class="fas fa-search search-icon"></i>
                     </button>
                 </form>
-                <a href="javascript:;" aria-label="Account" class="account-icon"
-                    ><i class="fas fa-user" alt="User icon"></i
-                ></a>
+                <a
+                    href="javascript:;"
+                    aria-label="Account"
+                    class="account-icon"
+                >
+                    <i class="fas fa-user"></i>
+                </a>
             </nav>
         </header>
 
@@ -119,6 +118,7 @@
                                     >Nom i Cognoms</label
                                 >
                                 <input
+                                    id="name"
                                     type="text"
                                     name="name"
                                     class="contact-input"
@@ -129,6 +129,7 @@
                                     >Correu electrònic</label
                                 >
                                 <input
+                                    id="email"
                                     type="email"
                                     name="email"
                                     class="contact-input"
@@ -139,6 +140,7 @@
                                     >Missatge</label
                                 >
                                 <textarea
+                                    id="message"
                                     name="message"
                                     class="contact-input"
                                     placeholder="Missatge..."
@@ -162,15 +164,13 @@
                             ></iframe>
                             <div class="hours-list-parent">
                                 <div class="hours-list-container1">
+                                    <div class="hours-title">
+                                        <p class="title-hour">
+                                            Horari
+                                            <i class="fas fa-clock clock"></i>
+                                        </p>
+                                    </div>
                                     <ul class="hours-list1">
-                                        <div class="hours-title">
-                                            <p class="title-hour">
-                                                Horari
-                                                <i
-                                                    class="fas fa-clock clock"
-                                                ></i>
-                                            </p>
-                                        </div>
                                         <li class="hours">
                                             Dilluns - 10:00h a 20:00h
                                         </li>
@@ -230,30 +230,18 @@
                     </form>
                     <div class="socials">
                         <a href="https://www.facebook.com" aria-label="Facebook"
-                            ><i
-                                class="fab fa-facebook"
-                                aria-label="Visita'ns a Facebook"
-                            ></i
+                            ><i class="fab fa-facebook"></i
                         ></a>
                         <a
                             href="https://www.instagram.com"
                             aria-label="Instagram"
-                            ><i
-                                class="fab fa-instagram"
-                                aria-label="Visita'ns a Instagram"
-                            ></i
+                            ><i class="fab fa-instagram"></i
                         ></a>
                         <a href="https://www.twitter.com" aria-label="Twitter"
-                            ><i
-                                class="fab fa-twitter"
-                                aria-label="Visita'ns a Twitter"
-                            ></i
+                            ><i class="fab fa-twitter"></i
                         ></a>
                         <a href="https://www.youtube.com" aria-label="Youtube"
-                            ><i
-                                class="fab fa-youtube"
-                                aria-label="Visita'ns a Youtube"
-                            ></i
+                            ><i class="fab fa-youtube"></i
                         ></a>
                     </div>
                 </div>

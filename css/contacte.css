@@ -81,7 +81,7 @@ main {
     width: 230px;
     list-style-type: none; 
     text-align: left;
-    padding: 3px 20px 0px 0px;
+    padding: 0px 20px 0px 0px;
 }
 
 .hours-list2 {
@@ -100,7 +100,7 @@ main {
 
 .hours-title{    
     font-size: 1em;
-    margin-top: -10px;
+    margin-top: 15px;
 }
 
 .title-hour {
