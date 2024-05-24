@@ -175,27 +175,19 @@ nav ul {
 
 /* Imatges roba */
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-}
-
 .photos-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 10vh;
+    margin-top: 5px;
+    height: 2vh;
+    width: 100%;
 }
 
-.photos-products {
+.products-display {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-img {
+    flex: 1;
 }
 
 .sticker-img {
@@ -205,71 +197,53 @@ nav ul {
 }
 
 .skirt-img {
-    position: relative;
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    bottom: 50px;
-    left: 65%; 
-    transform: translateX(-50%) rotate(-20deg) ; 
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    bottom: 60px;
+    left: 50%; 
 }
 
 .jeans-img {
-    position: relative;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
-    bottom: 25px;
-    transform: translateX(-50%); 
+    margin-top: 40px;
 }
 
 .shoes-img {
-    position: relative;
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    bottom: 63px;
-    left: -8%; 
-    transform: translateX(-50%); 
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    bottom: 60px;
 }
 
 .hoodie-img {
-    position: relative;
-    width: 230px;
-    height: 230px;
-    object-fit: cover;
-    left: 78%; 
-    transform: translateX(-50%) rotate(20deg); 
-}
-
-.sweatshirt-img {
-    position: relative;
     width: 180px;
     height: 180px;
     object-fit: cover;
     bottom: 20px;
-    left: 23%; 
-    transform: translateX(-50%); 
+}
+
+.sweatshirt-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    bottom: 20px;
 }
 
 .totebag-img {
-    position: relative;
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    bottom: 60px;
+}
+
+.hat-img {
     width: 110px;
     height: 110px;
     object-fit: cover;
     bottom: 60px;
-    left: 79%; 
-    transform: translateX(-50%) rotate(20deg); 
-}
-
-.hat-img {
-    position: relative;
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    bottom: 65px;
-    left: 53%; 
-    transform: translateX(-50%); 
 }
 
 .flowers-img {
@@ -649,3 +623,8 @@ nav ul {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .products-display {
+        flex-direction: column;
+    }
+}
