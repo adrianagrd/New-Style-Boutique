@@ -25,7 +25,7 @@ article {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   .articleContent {
     text-align: center;
   }
