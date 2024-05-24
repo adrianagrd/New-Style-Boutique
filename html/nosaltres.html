@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>New Style Boutique</title>
+        <title>New Style Boutique - Sobre Nosaltres</title>
+        <meta
+            name="description"
+            content="New Style Boutique - Botiga de roba de dona situada a Barcelona. Ofereix una gran varietat de roba de dona."
+        />
         <link
             rel="icon"
             href="../images/sticker-vintage.png"
@@ -14,10 +18,15 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
         <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/nosaltres.css" />
     </head>
     <body>
         <header>
-            <nav class="navigation">
+            <nav
+                class="navigation"
+                role="navigation"
+                aria-label="Menú principal"
+            >
                 <ul>
                     <li class="logo-navbar">
                         <a href="index.html" lang="ca" class="logo-navbar">
@@ -59,27 +68,55 @@
                     </li>
                 </ul>
                 <form action="/search" method="get" class="search-bar">
+                    <label for="search" class="sr-only">Buscar...</label>
                     <input
                         type="search"
+                        id="search"
                         name="q"
                         class="search-input"
                         placeholder="Buscar..."
-                        aria-label="Search"
+                        aria-label="Buscar"
                     />
-
                     <button
                         type="submit"
                         class="btn-search"
-                        aria-label="Subscribe"
+                        aria-label="Buscar"
                     >
-                        <i class="fas fa-search search-icon"></i>
+                        <i
+                            class="fas fa-search search-icon"
+                            aria-hidden="true"
+                        ></i>
                     </button>
                 </form>
-                <a aria-label="Account" class="account-icon">
+                <a href="#" aria-label="Account" class="account-icon">
                     <i class="fas fa-user"></i>
                 </a>
             </nav>
         </header>
+        <main>
+            <section class="section-about">
+                <h1 class="section-title">Sobre Nosaltres</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            New Style Boutique és una botiga de roba de dona
+                            situada a Barcelona. La nostra botiga ofereix una
+                            gran varietat de roba de dona, des de vestits de nit
+                            fins a roba de diari. La nostra botiga està situada
+                            al centre de Barcelona, a prop de la Plaça
+                            Catalunya. La nostra botiga està oberta de dilluns a
+                            dissabte de 10:00 a 20:00. Vine a visitar-nos i
+                            descobreix la nostra gran varietat de roba de dona.
+                        </p>
+                    </div>
+                    <img
+                        src="../images/store.jpg"
+                        alt="Botiga de roba"
+                        class="store-img"
+                    />
+                </div>
+            </section>
+        </main>
         <footer>
             <div class="footer-content">
                 <div class="footer-section about">
@@ -107,18 +144,18 @@
                     </form>
                     <div class="socials">
                         <a href="https://www.facebook.com" aria-label="Facebook"
-                            ><i class="fab fa-facebook"></i
+                            ><i class="fab fa-facebook" aria-hidden="true"></i
                         ></a>
                         <a
                             href="https://www.instagram.com"
                             aria-label="Instagram"
-                            ><i class="fab fa-instagram"></i
+                            ><i class="fab fa-instagram" aria-hidden="true"></i
                         ></a>
                         <a href="https://www.twitter.com" aria-label="Twitter"
-                            ><i class="fab fa-twitter"></i
+                            ><i class="fab fa-twitter" aria-hidden="true"></i
                         ></a>
                         <a href="https://www.youtube.com" aria-label="Youtube"
-                            ><i class="fab fa-youtube"></i
+                            ><i class="fab fa-youtube" aria-hidden="true"></i
                         ></a>
                     </div>
                 </div>
