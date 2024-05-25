@@ -2,7 +2,6 @@
 
 html {
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -66,6 +65,8 @@ nav ul {
     background-color: #FFDDD2;
     padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
+    color: #000;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -92,8 +93,8 @@ nav ul {
 
 .search-bar {
     display: flex;
-    margin-top: 7px;
-    height: 37px;
+    margin-top: 4px;
+    height: 38px;
 }
 
 .search-input{
@@ -158,11 +159,11 @@ nav ul {
 
 .btn-buy {
     display: flex;
+    justify-content: center;
     background-color: #FFDDD2;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
-    margin-top: 100px;
     color: #333;
     width: 120px;
     border: none;
@@ -173,10 +174,24 @@ nav ul {
 .btn-buy:hover {
     color: #fff;
     box-shadow: inset 0 5px 5px #dbbcb2;
-
 }
 
 /* Imatges roba */
+
+.photos-container {
+    margin-top: 5px;
+    height: 2vh;
+    width: 100%;
+}
+
+.products-display {
+    display: flex;
+    align-items: center;
+}
+
+.product-img {
+    flex: 1;
+}
 
 .sticker-img {
     width: 80px;
@@ -185,73 +200,79 @@ nav ul {
 }
 
 .skirt-img {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    bottom: 140px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    bottom: 60px;
     left: 50%; 
-    transform: translateX(-50%); 
 }
 
 .jeans-img {
-    position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
-    bottom: 20px;
-    left: 10%; 
-    transform: translateX(-50%); 
+    margin-top: 40px;
 }
 
 .shoes-img {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    bottom: 90px;
-    left: 13%; 
-    transform: translateX(-50%); 
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    bottom: 60px;
 }
 
 .hoodie-img {
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    object-fit: cover;
-    bottom: 10px;
-    left: 80%; 
-    transform: translateX(-50%); 
-}
-
-.sweatshirt-img {
-    position: absolute;
     width: 180px;
     height: 180px;
     object-fit: cover;
-    bottom: 50px;
-    left: 30%; 
-    transform: translateX(-50%); 
+    bottom: 20px;
+}
+
+.sweatshirt-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    bottom: 20px;
 }
 
 .totebag-img {
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    bottom: 75px;
-    left: 86%; 
-    transform: translateX(-50%) rotate(20deg); 
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    bottom: 60px;
 }
 
 .hat-img {
-    position: absolute;
     width: 110px;
     height: 110px;
     object-fit: cover;
-    bottom: 80px;
-    left: 57%; 
-    transform: translateX(-50%); 
+    bottom: 60px;
+}
+
+.flowers-img {
+    width: 17%;
+    object-fit: cover;
+    left: 73%; 
+}
+
+@keyframes rotate-right {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes rotate-left {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.skirt-img, .jeans-img, .shoes-img, .totebag-img {
+    animation: rotate-right 2s infinite linear;
+}
+
+.hoodie-img, .sweatshirt-img, .hat-img {
+    animation: rotate-left 2s infinite linear;
 }
 
 /* Footer */
@@ -259,7 +280,7 @@ nav ul {
 .footer-content {
     background-color: #d5bdaf;
     color: #333;
-    padding: 20px;
+    padding: 0px 0px 0px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -267,16 +288,24 @@ nav ul {
 
 .footer-section {
     flex: 1;
+    padding-top: 10px;
     margin-right: 20px;
 }
 
-.footer-section h2 {
-    margin-bottom: 20px;
+.footer-section h4 {
+    margin-top: 25px;
 }
 
 .footer-section ul {
     list-style: none;
+    font-size: 13px;
     padding: 0;
+    margin-right: 20px;
+}
+
+.footer-section li:hover {
+    transform: scale(0.8);
+    transition: 0.7s;
 }
 
 .footer-section ul a {
@@ -320,6 +349,7 @@ nav ul {
     align-items: center;
     font-size: 13px;
     width: 70%;
+    padding-top: 20px;
     text-align: justify;
 }
 
@@ -347,6 +377,8 @@ nav ul {
 .socials {
     display: flex;
     margin-top: 20px;
+    font-size: 17px;
+    padding-bottom: 10px;
 }
 
 .socials a {
@@ -356,24 +388,246 @@ nav ul {
 
 /* Slider */
 
-/* .sliding-container {
+.sliding-container {
     display: flex;
     overflow: hidden;
-    animation: slide 40s linear infinite;
-    height: 50px;
+    animation: slide 80s linear infinite;
+    height: 30px;
     align-items: center;
-    background-color: pink;
     padding: 0 20px;
+    width: 90vw;
 }
 
-.sliding-container a {
+.sliding-text {
     display: flex;
-    margin-right: 70px; 
+    overflow: hidden;
+    margin-right: 50px; 
     align-items: center;
+    width: 25%; 
+}
+
+.sliding-text i {
+    margin-left: 7px;
 }
 
 @keyframes slide {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
 }
 
+/* Responsive code */
+
+@media screen and (max-width: 768px) {
+    .logo-navbar img {
+        width: 40px; 
+        height: 40px; 
+    }
+
+    .search-input {
+        width: 150px;
+    }
+
+    .search-bar {
+        margin-top: 5px;
+    }
+
+    .btn-navbar {
+        padding: 10px 15px;
+    }
+
+    .btn-buy {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin-right: 0px;
+    }
+
+    .footer-section ul {
+        margin-right: 0px;
+    }
+
+    .footer-section .contact-form input,
+    .footer-section .contact-form textarea {
+        width: calc(100% - 10px);
+    }
+
+    .footer-section .contact-form button {
+        padding: 10px 0;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .socials {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search-input {
+        width: 100px;
+    }
+
+    .search-bar {
+        margin-top: 5px;
+    }
+
+    .btn-navbar {
+        padding: 10px 15px;
+    }
+
+    .btn-buy {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin-right: 0px;
+    }
+
+    .footer-section ul {
+        margin-right: 0px;
+    }
+
+    .footer-section .contact-form input,
+    .footer-section .contact-form textarea {
+        width: calc(100% - 10px);
+    }
+
+    .footer-section .contact-form button {
+        padding: 10px 0;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .socials {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .search-input {
+        width: 80px;
+    }
+
+    .search-bar {
+        margin-top: 5px;
+    }
+
+    .btn-navbar {
+        padding: 10px 15px;
+    }
+
+    .btn-buy {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin-right: 0px;
+    }
+
+    .footer-section ul {
+        margin-right: 0px;
+    }
+
+    .footer-section .contact-form input,
+    .footer-section .contact-form textarea {
+        width: calc(100% - 10px);
+    }
+
+    .footer-section .contact-form button {
+        padding: 10px 0;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .socials {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .search-input {
+        width: 60px;
+    }
+
+    .search-bar {
+        margin-top: 5px;
+    }
+
+    .btn-navbar {
+        padding: 10px 15px;
+    }
+
+    .btn-buy {
+        padding: 10px 15px;
+    }
+
+    .footer-content {
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin-right: 0px;
+    }
+
+    .footer-section ul {
+        margin-right: 0px;
+    }
+
+    .footer-section .contact-form input,
+    .footer-section .contact-form textarea {
+        width: calc(100% - 10px);
+    }
+
+    .footer-section .contact-form button {
+        padding: 10px 0;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .socials {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products-display {
+        flex-direction: column;
+    }
+}
