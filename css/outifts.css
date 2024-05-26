@@ -1,17 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: #ffffff;
-  color: #333;
-  text-align: center;
-}
-
 article {
+  font-family: Arial, sans-serif;
   display: grid !important;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -20,6 +14,7 @@ article {
 }
 
 .articleContent {
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,12 +31,14 @@ article img:nth-child(3) {
 }
 
 .grid-container {
+  font-family: Arial, sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
 .grid-item {
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   margin-bottom: 1vh;
@@ -55,33 +52,12 @@ article img:nth-child(3) {
   object-fit: cover;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  margin: 1vh 0 0 1vh;
-  gap: 10px;
-}
 
 .round-image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
 }
 
 .carousel {
@@ -127,106 +103,4 @@ iframe {
 .home-content {
   background-color: #f7efe2;
   padding: 20px;
-}
-
-.btn-buy {
-  display: block;
-  margin: 20px auto;
-  background-color: #ffddd2;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.footer-content {
-  background-color: #ffddd2;
-  color: #333;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footer-section {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.footer-section h2 {
-  margin-bottom: 20px;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul a {
-  color: #333;
-  text-decoration: none;
-}
-
-.footer-section .contact-form input,
-.footer-section .contact-form textarea {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #f7efe2;
-  border: none;
-  border-radius: 5px;
-}
-
-.footer-section .contact-form button {
-  width: 100%;
-  background-color: #ffddd2;
-  color: #333;
-  border: none;
-  padding: 15px 0;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 10px;
-  background-color: #f7efe2;
-}
-
-.socials a {
-  color: #333;
-  margin-right: 10px;
-}
-
-/* Slider */
-
-.sliding-container {
-  display: flex;
-  overflow: hidden;
-  animation: slide 40s linear infinite;
-  height: 50px;
-  align-items: center;
-  background-color: #f7efe2;
-}
-
-.sliding-container a {
-  display: flex;
-  margin-right: 70px;
-  align-items: center;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }
