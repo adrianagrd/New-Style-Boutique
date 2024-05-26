@@ -154,103 +154,45 @@ nav ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 250px;
+    height: 60px;
 }
 
 .btn-buy {
-    display: flex;
-    justify-content: center;
-    background-color: #FFDDD2;
+    background-color: #333;
+    color: #fff;
+    border: none;
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
-    color: #333;
-    width: 120px;
-    border: none;
-    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #dbbcb2;
 }
 
 .btn-buy:hover {
-    color: #fff;
-    box-shadow: inset 0 5px 5px #dbbcb2;
+    background-color: #9a9a9a;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Imatges roba */
 
 .photos-container {
-    margin-top: 5px;
-    height: 2vh;
-    width: 100%;
-}
-
-.products-display {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 80px;
 }
-
-.product-img {
-    flex: 1;
-}
-
+   
 .sticker-img {
     width: 80px;
     height: 80px;
     object-fit: cover;
 }
 
-.skirt-img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    bottom: 60px;
-    left: 50%; 
-}
-
-.jeans-img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin-top: 40px;
-}
-
-.shoes-img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    bottom: 60px;
-}
-
-.hoodie-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    bottom: 20px;
-}
-
-.sweatshirt-img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    bottom: 20px;
-}
-
-.totebag-img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-    bottom: 60px;
-}
-
-.hat-img {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    bottom: 60px;
-}
-
 .flowers-img {
-    width: 17%;
+    width: 20%;
     object-fit: cover;
     left: 73%; 
 }
@@ -287,6 +229,7 @@ nav ul {
 }
 
 .footer-section {
+    
     flex: 1;
     padding-top: 10px;
     margin-right: 20px;
@@ -339,6 +282,7 @@ nav ul {
 
 .footer-bottom {
     text-align: center;
+    background-color: #edede9;
     font-size: small;
 }
 
@@ -360,7 +304,12 @@ nav ul {
     border: none;
     border-radius: 5px;
 }
+.message {
+    width: 80%;
+    margin: 10px 0px;
+    font-size: 12px;
 
+}
 .btn-subscribe{
     background-color: #333;
     color: #fff;
@@ -371,6 +320,7 @@ nav ul {
     cursor: pointer;
     border-radius: 5px;
 }
+
 /* Socials */
 
 .socials {
