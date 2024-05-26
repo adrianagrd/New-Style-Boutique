@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+html {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
   background-color: #ffffff;
   margin: 0;
@@ -5,7 +13,6 @@ body {
 }
 
 article {
-  font-family: Arial, sans-serif;
   display: grid !important;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -42,7 +49,6 @@ article img:nth-child(3) {
 }
 
 .grid-container {
-  font-family: Arial, sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
