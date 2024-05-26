@@ -1,153 +1,226 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>New Style Boutique - Outfits</title>
-        <link
-            rel="icon"
-            href="../images/sticker-vintage.png"
-            type="image/x-icon"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <link rel="stylesheet" href="../css/styles.css" />
-    </head>
-    <body>
-        <header>
-            <nav class="navigation">
-                <ul>
-                    <li class="logo-navbar">
-                        <a href="index.html" lang="ca" class="logo-navbar">
-                            <img
-                                src="../images/sticker-vintage.png"
-                                alt="Logo de New Style Boutique"
-                                class="sticker-img"
-                            />
-                        </a>
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="index.html" lang="ca" class="link-navbar"
-                            >Inici</a
-                        >
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="clothes.html" lang="ca" class="link-navbar"
-                            >Roba</a
-                        >
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="nosaltres.html" lang="ca" class="link-navbar"
-                            >Nosaltres</a
-                        >
-                    </li>
-                    <li class="btn-navbar">
-                        <a href="contacte.html" lang="ca" class="link-navbar"
-                            >Contacte</a
-                        >
-                    </li>
-                    <li class="btn-navbar">
-                        <a
-                            href="outfits.html"
-                            lang="ca"
-                            class="link-navbar"
-                            aria-current="page"
-                            >Outfits</a
-                        >
-                    </li>
-                </ul>
-                <form action="/search" method="get" class="search-bar">
-                    <input
-                        type="search"
-                        name="q"
-                        class="search-input"
-                        placeholder="Buscar..."
-                        aria-label="Search"
-                    />
 
-                    <button
-                        type="submit"
-                        class="btn-search"
-                        aria-label="Subscribe"
-                    >
-                        <i class="fas fa-search search-icon"></i>
-                    </button>
-                </form>
-                <a aria-label="Account" class="account-icon"
-                    ><i class="fas fa-user"></i
-                ></a>
-            </nav>
-        </header>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section about">
-                    <p class="footer-newsletter">
-                        T'agraden les tendencies de roba? No et perdis res sobre
-                        nosaltres. Subscriu-te al nostre Butlletí i rep un 10%
-                        de descompte en la teva pròxima compra.
-                    </p>
-                    <form action="/subscribe" method="post">
-                        <input
-                            type="email"
-                            name="email"
-                            class="email-input"
-                            placeholder="Correu electrònic..."
-                            aria-label="Correu electrònic"
-                            required
-                        />
-                        <button
-                            type="submit"
-                            class="btn-subscribe"
-                            aria-label="Subscriure"
-                        >
-                            Enviar
-                        </button>
-                    </form>
-                    <div class="socials">
-                        <a href="https://www.facebook.com" aria-label="Facebook"
-                            ><i class="fab fa-facebook"></i
-                        ></a>
-                        <a
-                            href="https://www.instagram.com"
-                            aria-label="Instagram"
-                            ><i class="fab fa-instagram"></i
-                        ></a>
-                        <a href="https://www.twitter.com" aria-label="Twitter"
-                            ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a href="https://www.youtube.com" aria-label="Youtube"
-                            ><i class="fab fa-youtube"></i
-                        ></a>
-                    </div>
-                </div>
-                <div class="footer-section links">
-                    <h4>VOLS SABER MÉS?</h4>
-                    <ul>
-                        <li>
-                            <a lang="ca">Esdeveniment</a>
-                        </li>
-                        <li><a lang="ca">Equip</a></li>
-                        <li><a lang="ca">Galeria</a></li>
-                        <li>
-                            <a href="../pdf/avisoLegal.pdf" lang="ca"
-                                >Avís Legal</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <img
-                    src="../images/flowers2.png"
-                    alt="Flors"
-                    class="flowers-img"
-                />
-            </div>
-            <div class="footer-bottom">
-                <p>
-                    &copy; 2024 New Style Boutique. Tots els drets reservats.<br />
-                </p>
-            </div>
-        </footer>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Style Boutique</title>
+  <link rel="icon" href="../images/sticker-vintage.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/outifts.css" />
+  <script src="../js/outfits.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+  <header>
+    <nav role="navigation" class="navigation">
+      <ul>
+        <li class="logo-navbar">
+          <a href="index.html" lang="ca" class="logo-navbar">
+            <img src="../images/sticker-vintage.png" alt="Logo de New Style Boutique" class="sticker-img" />
+          </a>
+        </li>
+        <li class="btn-navbar">
+          <a href="index.html" lang="ca" class="link-navbar">Inici</a>
+        </li>
+        <li class="btn-navbar">
+          <a href="roba.html" lang="ca" class="link-navbar">Roba</a>
+        </li>
+        <li class="btn-navbar">
+          <a href="nosaltres.html" lang="ca" class="link-navbar">Nosaltres</a>
+        </li>
+        <li class="btn-navbar">
+          <a href="contacte.html" lang="ca" class="link-navbar">Contacte</a>
+        </li>
+        <li class="btn-navbar">
+          <a href="outfits.html" lang="ca" class="link-navbar">Outfits</a>
+        </li>
+      </ul>
+      <form action="/search" method="get" class="search-bar">
+        <input type="search" name="q" class="search-input" placeholder="Buscar..." aria-label="Search" />
+
+        <button type="submit" class="btn-search" aria-label="Subscribe">
+          <a href="javascript:;" aria-label="product-search" class="search-icon"><i class="fas fa-search"
+              alt="Search icon"></i></a>
+        </button>
+      </form>
+      <a href="javascript:;" aria-label="Account" class="account-icon"><i class="fas fa-user" alt="User icon"></i></a>
+    </nav>
+  </header>
+
+  <body>
+    <div>
+      <iframe class="mySlides" src="https://www.youtube.com/embed/1KyQamImblI" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+      <iframe class="mySlides" src="https://www.youtube.com/embed/C_A_Pfg2CyE" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 6000);
+      }
+    </script>
+    <article>
+      <img src="../images/floral-design.png" alt="Flower decoration" />
+      <div class="articleContent">
+        <h1>MARCA EL TEU PROPI ESTIL!</h1>
+        <h2>Inspire’t i deixe’t inspirar pel món de la segona mà</h2>
+      </div>
+      <img src="../images/floral-design.png" alt="Flower decoration" />
+    </article>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit3.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic1.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit2.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic2.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit1.png" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic3.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit4.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic4.jpeg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit5.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic5.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit6.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic6.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit7.png" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic7.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit8.png" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic8.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit15.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic9.png" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit10.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic10.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit11.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic11.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img class="main-image" src="../images/outfits/outfit14.jpg" alt="Main image">
+        <div class="footer">
+          <img class="round-image" src="../images/profilePics/profilepic12.jpg" alt="Round image">
+          <p>@user123</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <p class="footer-newsletter">
+          T'agrada la curiositat? No et perdis res sobre nosaltres. Subscriu-te
+          al nostre Butlletí i rep un 10% de descompte en la teva pròxima
+          compra.
+        </p>
+        <form action="/subscribe" method="post">
+          <input type="email" name="email" class="email-input" placeholder="Correu electrònic..."
+            aria-label="Your email" required />
+          <button type="submit" class="btn-subscribe" aria-label="Subscribe">
+            Enviar
+          </button>
+        </form>
+        <div class="socials">
+          <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook"
+              aria-label="Visita'ns a Facebook"></i></a>
+          <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"
+              aria-label="Visita'ns a Instagram"></i></a>
+          <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"
+              aria-label="Visita'ns a Twitter"></i></a>
+          <a href="https://www.youtube.com" aria-label="Youtube"><i class="fab fa-youtube"
+              aria-label="Visita'ns a Youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section links">
+        <h4>VOLS SABER MÉS?</h4>
+        <ul>
+          <li>
+            <a href="javascript:;" lang="ca">Esdeveniment</a>
+          </li>
+          <li><a href="javascript:;" lang="ca">Equip</a></li>
+          <li><a href="javascript:;" lang="ca">Galeria</a></li>
+          <li>
+            <a href="javascript:;" lang="ca">Termes i Condicions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 New Style Boutique. Tots els drets reservats.<br /></p>
+    </div>
+  </footer>
+
 </html>
