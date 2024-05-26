@@ -229,7 +229,6 @@ nav ul {
 }
 
 .footer-section {
-    
     flex: 1;
     padding-top: 10px;
     margin-right: 20px;
@@ -282,7 +281,6 @@ nav ul {
 
 .footer-bottom {
     text-align: center;
-    background-color: #edede9;
     font-size: small;
 }
 
