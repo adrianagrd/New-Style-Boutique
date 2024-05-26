@@ -250,7 +250,7 @@ nav ul {
 }
 
 .flowers-img {
-    width: 17%;
+    width: 20%;
     object-fit: cover;
     left: 73%; 
 }
@@ -339,6 +339,7 @@ nav ul {
 
 .footer-bottom {
     text-align: center;
+    background-color: #edede9;
     font-size: small;
 }
 
@@ -360,7 +361,12 @@ nav ul {
     border: none;
     border-radius: 5px;
 }
+.message {
+    width: 80%;
+    margin: 10px 0px;
+    font-size: 12px;
 
+}
 .btn-subscribe{
     background-color: #333;
     color: #fff;
@@ -371,6 +377,7 @@ nav ul {
     cursor: pointer;
     border-radius: 5px;
 }
+
 /* Socials */
 
 .socials {

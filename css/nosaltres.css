@@ -83,3 +83,23 @@ main {
     align-items: center;
     margin-top: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+    .about-content, .team-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-member, .store-img {
+        width: 100%;
+    }
+
+    .store-img, .team-member-img {
+        height: auto;
+    }
+    
+    .about-text, .team-member {
+        width: 100%;
+        margin-left: 0;
+    }
+}
