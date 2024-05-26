@@ -4,22 +4,28 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
-        
-
-
     }
     .grid-item {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding-bottom: 20px;
+        background-color: #e1dedca9;
+        margin: 5px;
+        border-radius: 20px;
+
     }
+   .grid-item:hover{
+        background-color: #f3f3f3;
+        transition-duration: .3s;
+   }
     .grid-item img {
         max-width: 100%;
         max-height: 90%;
-        height: 350px;
+        height: 280px;
         width: auto;
+        border-radius: 10px;
     }
     .card-image{
         text-align: center;
@@ -28,10 +34,16 @@
         align-items: center;
         flex-direction: column;
     }
+    .descripccion-img{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     /* boton comprar */
     .button-buy {
     width: 180px;
-    height: 40px;
+    height: 30px;
     background-image: linear-gradient(#E3D5CA, #D5BDAF);
     border: none;
     border-radius: 50px;

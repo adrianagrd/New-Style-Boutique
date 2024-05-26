@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>New Style Boutique</title>
+        <title>New Style Boutique - Inici</title>
         <link
             rel="icon"
             href="../images/sticker-vintage.png"
@@ -18,7 +18,7 @@
 
     <body>
         <header>
-            <nav role="navigation" class="navigation">
+            <nav class="navigation">
                 <ul>
                     <li class="logo-navbar">
                         <a href="index.html" lang="ca" class="logo-navbar">
@@ -30,12 +30,16 @@
                         </a>
                     </li>
                     <li class="btn-navbar">
-                        <a href="index.html" lang="ca" class="link-navbar"
+                        <a
+                            href="index.html"
+                            lang="ca"
+                            class="link-navbar"
+                            aria-current="page"
                             >Inici</a
                         >
                     </li>
                     <li class="btn-navbar">
-                        <a href="roba.html" lang="ca" class="link-navbar"
+                        <a href="clothes.html" lang="ca" class="link-navbar"
                             >Roba</a
                         >
                     </li>
@@ -63,32 +67,26 @@
                         placeholder="Buscar..."
                         aria-label="Search"
                     />
-
                     <button
                         type="submit"
                         class="btn-search"
                         aria-label="Subscribe"
                     >
-                        <a
-                            href="javascript:;"
-                            aria-label="product-search"
-                            class="search-icon"
-                            ><i class="fas fa-search" alt="Search icon"></i
-                        ></a>
+                        <i class="fas fa-search search-icon"></i>
                     </button>
                 </form>
-                <a href="javascript:;" aria-label="Account" class="account-icon"
-                    ><i class="fas fa-user" alt="User icon"></i
-                ></a>
+                <a aria-label="Cuenta" class="account-icon">
+                    <i class="fas fa-user"></i>
+                </a>
             </nav>
         </header>
 
         <main id="maincontent">
             <section class="home">
                 <div class="home-content">
-                    <h4 class="home-title">
+                    <h2 class="home-title">
                         DESCOBREIX LA NOSTRE COL·LECCIÓ DE ROBA SOSTENIBLE!
-                    </h4>
+                    </h2>
                     <p class="description-home">
                         Descobreix la nostra col·lecció de roba de moda per a
                         tots. Des de roba casual fins a roba de festa, tenim tot
@@ -96,57 +94,77 @@
                     </p>
                 </div>
             </section>
-            <section class="photo-products">
-                <img
-                    src="../images/skirt.png"
-                    alt="Faldilla"
-                    class="skirt-img"
-                />
-                <img
-                    src="../images/jeans.png"
-                    alt="Pantalons de texà"
-                    class="jeans-img"
-                />
-                <img
-                    src="../images/shoes.png"
-                    alt="Sabates"
-                    class="shoes-img"
-                />
-                <img
-                    src="../images/hoodie.png"
-                    alt="Sudadera"
-                    class="hoodie-img"
-                />
-                <img
-                    src="../images/sweatshirt.png"
-                    alt="Samarreta"
-                    class="sweatshirt-img"
-                />
-                <img
-                    src="../images/totebag.png"
-                    alt="Tote bag"
-                    class="totebag-img"
-                />
-                <img src="../images/hat.png" alt="Barret" class="hat-img" />
-                <img
-                    src="../images/flowers.png"
-                    alt="Flors"
-                    class="flowers-img"
-                />
-            </section>
-            <section class="products">
-                <div class="see-products">
-                    <a href="roba.html" class="btn-buy" lang="ca"
-                        >COMPRAR ARA</a
-                    >
+            <div class="photos-container">
+                <div class="products-display">
+                    <img
+                        src="../images/jeans.png"
+                        alt="Pantalons de texà"
+                        class="product-img jeans-img"
+                    />
+                    <img
+                        src="../images/shoes.png"
+                        alt="Sabates"
+                        class="product-img shoes-img"
+                    />
+                    <img
+                        src="../images/hoodie.png"
+                        alt="Sudadera"
+                        class="product-img hoodie-img"
+                    />
+                    <div class="center-content">
+                        <a href="clothes.html" class="btn-buy" lang="ca"
+                            >COMPRAR ARA</a
+                        >
+                        <!-- <img
+                            src="../images/hat.png"
+                            alt="Barret"
+                            class="hat-img"
+                        /> -->
+                    </div>
+                    <img
+                        src="../images/sweatshirt.png"
+                        alt="Samarreta"
+                        class="product-img sweatshirt-img"
+                    />
+                    <img
+                        src="../images/skirt.png"
+                        alt="Faldilla"
+                        class="product-img skirt-img"
+                    />
+
+                    <img
+                        src="../images/totebag.png"
+                        alt="Tote bag"
+                        class="product-img totebag-img"
+                    />
                 </div>
+            </div>
+            <section class="products">
+                <div class="see-products"></div>
             </section>
         </main>
         <footer>
+            <hr />
+
+            <div class="sliding-container">
+                <p class="sliding-text">
+                    Roba sostenible <i class="fas fa-leaf"></i>
+                </p>
+                <p class="sliding-text">
+                    Playlist Spotify <i class="fas fa-music"></i>
+                </p>
+                <p class="sliding-text">
+                    Moda ètica <i class="fas fa-tshirt"></i>
+                </p>
+                <p class="sliding-text">
+                    Consum responsable <i class="fas fa-hand-holding-heart"></i>
+                </p>
+            </div>
+            <hr />
             <div class="footer-content">
                 <div class="footer-section about">
                     <p class="footer-newsletter">
-                        T'agrada la curiositat? No et perdis res sobre
+                        T'agraden les tendencies de roba? No et perdis res sobre
                         nosaltres. Subscriu-te al nostre Butlletí i rep un 10%
                         de descompte en la teva pròxima compra.
                     </p>
@@ -156,43 +174,31 @@
                             name="email"
                             class="email-input"
                             placeholder="Correu electrònic..."
-                            aria-label="Your email"
+                            aria-label="Correu electrònic"
                             required
                         />
                         <button
                             type="submit"
                             class="btn-subscribe"
-                            aria-label="Subscribe"
+                            aria-label="Subscriure"
                         >
                             Enviar
                         </button>
                     </form>
                     <div class="socials">
                         <a href="https://www.facebook.com" aria-label="Facebook"
-                            ><i
-                                class="fab fa-facebook"
-                                aria-label="Visita'ns a Facebook"
-                            ></i
+                            ><i class="fab fa-facebook"></i
                         ></a>
                         <a
                             href="https://www.instagram.com"
                             aria-label="Instagram"
-                            ><i
-                                class="fab fa-instagram"
-                                aria-label="Visita'ns a Instagram"
-                            ></i
+                            ><i class="fab fa-instagram"></i
                         ></a>
                         <a href="https://www.twitter.com" aria-label="Twitter"
-                            ><i
-                                class="fab fa-twitter"
-                                aria-label="Visita'ns a Twitter"
-                            ></i
+                            ><i class="fab fa-twitter"></i
                         ></a>
                         <a href="https://www.youtube.com" aria-label="Youtube"
-                            ><i
-                                class="fab fa-youtube"
-                                aria-label="Visita'ns a Youtube"
-                            ></i
+                            ><i class="fab fa-youtube"></i
                         ></a>
                     </div>
                 </div>
@@ -200,17 +206,22 @@
                     <h4>VOLS SABER MÉS?</h4>
                     <ul>
                         <li>
-                            <a href="javascript:;" lang="ca">Esdeveniment</a>
+                            <a lang="ca">Esdeveniment</a>
                         </li>
-                        <li><a href="javascript:;" lang="ca">Equip</a></li>
-                        <li><a href="javascript:;" lang="ca">Galeria</a></li>
+                        <li><a lang="ca">Equip</a></li>
+                        <li><a lang="ca">Galeria</a></li>
                         <li>
-                            <a href="javascript:;" lang="ca"
-                                >Termes i Condicions</a
+                            <a href="../pdf/avisoLegal.pdf" lang="ca"
+                                >Avís Legal</a
                             >
                         </li>
                     </ul>
                 </div>
+                <img
+                    src="../images/flowers2.png"
+                    alt="Flors"
+                    class="flowers-img"
+                />
             </div>
             <div class="footer-bottom">
                 <p>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>New Style Boutique</title>
+        <title>New Style Boutique - Contacte</title>
         <link
             rel="icon"
             href="../images/sticker-vintage.png"
@@ -14,10 +14,11 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
         <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/contacte.css" />
     </head>
     <body>
         <header>
-            <nav role="navigation" class="navigation">
+            <nav class="navigation">
                 <ul>
                     <li class="logo-navbar">
                         <a href="index.html" lang="ca" class="logo-navbar">
@@ -34,7 +35,7 @@
                         >
                     </li>
                     <li class="btn-navbar">
-                        <a href="roba.html" lang="ca" class="link-navbar"
+                        <a href="clothes.html" lang="ca" class="link-navbar"
                             >Roba</a
                         >
                     </li>
@@ -44,7 +45,11 @@
                         >
                     </li>
                     <li class="btn-navbar">
-                        <a href="contacte.html" lang="ca" class="link-navbar"
+                        <a
+                            href="contacte.html"
+                            lang="ca"
+                            class="link-navbar"
+                            aria-current="page"
                             >Contacte</a
                         >
                     </li>
@@ -60,32 +65,151 @@
                         name="q"
                         class="search-input"
                         placeholder="Buscar..."
-                        aria-label="Search"
+                        aria-label="Buscar"
                     />
-
                     <button
                         type="submit"
                         class="btn-search"
-                        aria-label="Subscribe"
+                        aria-label="Buscar"
                     >
-                        <a
-                            href="javascript:;"
-                            aria-label="product-search"
-                            class="search-icon"
-                            ><i class="fas fa-search" alt="Search icon"></i
-                        ></a>
+                        <i class="fas fa-search search-icon"></i>
                     </button>
                 </form>
-                <a href="javascript:;" aria-label="Account" class="account-icon"
-                    ><i class="fas fa-user" alt="User icon"></i
+                <a href="#" aria-label="Account" class="account-icon"
+                    ><i class="fas fa-user"></i
                 ></a>
             </nav>
         </header>
+
+        <main id="main-content">
+            <section class="contact">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="address-info">
+                            <h2 class="contact-subtitle">
+                                Informació de Contacte
+                            </h2>
+                            <p class="address">
+                                <i
+                                    class="fas fa-map-marker-alt contact-icons"
+                                ></i>
+                                Carrer de Provença, 480, 08025 Barcelona
+                            </p>
+                            <p>
+                                <i class="fas fa-phone-alt contact-icons"></i>
+                                +34 93 456 78 90
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope"></i>
+                                <a
+                                    href="mailto:NewStyleBoutique@gmail.com"
+                                    class="mailto"
+                                    >NewStyleBoutique@gmail.com</a
+                                >
+                            </p>
+                            <hr class="line-separator" />
+                            <h2 class="contact-subtitle">
+                                Formulari de Contacte
+                            </h2>
+                            <form
+                                action="/contact"
+                                method="post"
+                                class="contact-form"
+                            >
+                                <label for="name" class="contact-label"
+                                    >Nom i Cognoms</label
+                                >
+                                <input
+                                    id="name"
+                                    type="text"
+                                    name="name"
+                                    class="contact-input"
+                                    placeholder="Nom i Cognoms"
+                                    required
+                                />
+                                <label for="email" class="contact-label"
+                                    >Correu electrònic</label
+                                >
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    class="contact-input"
+                                    placeholder="Correu electrònic"
+                                    required
+                                />
+                                <label for="message" class="contact-label"
+                                    >Missatge</label
+                                >
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="contact-input"
+                                    placeholder="Missatge..."
+                                    required
+                                ></textarea>
+                                <button
+                                    type="submit"
+                                    class="btn-contact"
+                                    aria-label="Enviar"
+                                >
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+                        <div class="map-info">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.681505727711!2d2.174355315422689!3d41.40349397926419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2fc23bb948d%3A0xa5a5fd2f6f5a1a4!2sCarrer%20de%20Proven%C3%A7a%2C%20480%2C%2008025%20Barcelona%2C%20Spain!5e0!3m2!1sen!2sus!4v1637672821234!5m2!1sen!2sus"
+                                allowfullscreen=""
+                                loading="lazy"
+                                class="map-iframe"
+                            ></iframe>
+                            <div class="hours-list-parent">
+                                <div class="hours-list-container1">
+                                    <div class="hours-title">
+                                        <p class="title-hour">
+                                            Horari
+                                            <i class="fas fa-clock clock"></i>
+                                        </p>
+                                    </div>
+                                    <ul class="hours-list1">
+                                        <li class="hours">
+                                            Dilluns - 10:00h a 20:00h
+                                        </li>
+                                        <li class="hours">
+                                            Dimarts - 10:00h a 20:00h
+                                        </li>
+                                        <li class="hours">
+                                            Dimecres - 10:00h a 20:00h
+                                        </li>
+                                        <li class="hours">
+                                            Dijous - 10:00h a 20:00h
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="line-separator2" />
+                                <div class="hours-list-container2">
+                                    <ul class="hours-list2">
+                                        <li class="hours">
+                                            Divendres - 10:00h a 20:00h
+                                        </li>
+                                        <li class="hours">
+                                            Dissabte - 10:00h a 12:30h
+                                        </li>
+                                        <li class="hours">Diumenge - Tancat</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer>
             <div class="footer-content">
                 <div class="footer-section about">
                     <p class="footer-newsletter">
-                        T'agrada la curiositat? No et perdis res sobre
+                        T'agraden les tendencies de roba? No et perdis res sobre
                         nosaltres. Subscriu-te al nostre Butlletí i rep un 10%
                         de descompte en la teva pròxima compra.
                     </p>
@@ -95,43 +219,31 @@
                             name="email"
                             class="email-input"
                             placeholder="Correu electrònic..."
-                            aria-label="Your email"
+                            aria-label="Correu electrònic"
                             required
                         />
                         <button
                             type="submit"
                             class="btn-subscribe"
-                            aria-label="Subscribe"
+                            aria-label="Subscriure"
                         >
                             Enviar
                         </button>
                     </form>
                     <div class="socials">
                         <a href="https://www.facebook.com" aria-label="Facebook"
-                            ><i
-                                class="fab fa-facebook"
-                                aria-label="Visita'ns a Facebook"
-                            ></i
+                            ><i class="fab fa-facebook"></i
                         ></a>
                         <a
                             href="https://www.instagram.com"
                             aria-label="Instagram"
-                            ><i
-                                class="fab fa-instagram"
-                                aria-label="Visita'ns a Instagram"
-                            ></i
+                            ><i class="fab fa-instagram"></i
                         ></a>
                         <a href="https://www.twitter.com" aria-label="Twitter"
-                            ><i
-                                class="fab fa-twitter"
-                                aria-label="Visita'ns a Twitter"
-                            ></i
+                            ><i class="fab fa-twitter"></i
                         ></a>
                         <a href="https://www.youtube.com" aria-label="Youtube"
-                            ><i
-                                class="fab fa-youtube"
-                                aria-label="Visita'ns a Youtube"
-                            ></i
+                            ><i class="fab fa-youtube"></i
                         ></a>
                     </div>
                 </div>
@@ -139,17 +251,22 @@
                     <h4>VOLS SABER MÉS?</h4>
                     <ul>
                         <li>
-                            <a href="javascript:;" lang="ca">Esdeveniment</a>
+                            <a lang="ca">Esdeveniment</a>
                         </li>
-                        <li><a href="javascript:;" lang="ca">Equip</a></li>
-                        <li><a href="javascript:;" lang="ca">Galeria</a></li>
+                        <li><a lang="ca">Equip</a></li>
+                        <li><a lang="ca">Galeria</a></li>
                         <li>
-                            <a href="javascript:;" lang="ca"
-                                >Termes i Condicions</a
+                            <a href="../pdf/avisoLegal.pdf" lang="ca"
+                                >Avís Legal</a
                             >
                         </li>
                     </ul>
                 </div>
+                <img
+                    src="../images/flowers2.png"
+                    alt="Flors"
+                    class="flowers-img"
+                />
             </div>
             <div class="footer-bottom">
                 <p>

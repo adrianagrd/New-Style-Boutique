@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>New Style Boutique</title>
+        <title>New Style Boutique - Sobre Nosaltres</title>
+        <meta
+            name="description"
+            content="New Style Boutique - Botiga de roba de dona situada a Barcelona. Ofereix una gran varietat de roba de dona."
+        />
         <link
             rel="icon"
             href="../images/sticker-vintage.png"
@@ -14,10 +18,15 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
         <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/nosaltres.css" />
     </head>
     <body>
         <header>
-            <nav role="navigation" class="navigation">
+            <nav
+                class="navigation"
+                role="navigation"
+                aria-label="Menú principal"
+            >
                 <ul>
                     <li class="logo-navbar">
                         <a href="index.html" lang="ca" class="logo-navbar">
@@ -34,12 +43,16 @@
                         >
                     </li>
                     <li class="btn-navbar">
-                        <a href="roba.html" lang="ca" class="link-navbar"
+                        <a href="clothes.html" lang="ca" class="link-navbar"
                             >Roba</a
                         >
                     </li>
                     <li class="btn-navbar">
-                        <a href="nosaltres.html" lang="ca" class="link-navbar"
+                        <a
+                            href="nosaltres.html"
+                            lang="ca"
+                            class="link-navbar"
+                            aria-current="page"
                             >Nosaltres</a
                         >
                     </li>
@@ -55,37 +68,136 @@
                     </li>
                 </ul>
                 <form action="/search" method="get" class="search-bar">
+                    <label for="search" class="sr-only">Buscar...</label>
                     <input
                         type="search"
+                        id="search"
                         name="q"
                         class="search-input"
                         placeholder="Buscar..."
-                        aria-label="Search"
+                        aria-label="Buscar"
                     />
-
                     <button
                         type="submit"
                         class="btn-search"
-                        aria-label="Subscribe"
+                        aria-label="Buscar"
                     >
-                        <a
-                            href="javascript:;"
-                            aria-label="product-search"
-                            class="search-icon"
-                            ><i class="fas fa-search" alt="Search icon"></i
-                        ></a>
+                        <i
+                            class="fas fa-search search-icon"
+                            aria-hidden="true"
+                        ></i>
                     </button>
                 </form>
-                <a href="javascript:;" aria-label="Account" class="account-icon"
-                    ><i class="fas fa-user" alt="User icon"></i
-                ></a>
+                <a href="#" aria-label="Account" class="account-icon">
+                    <i class="fas fa-user"></i>
+                </a>
             </nav>
         </header>
+        <main>
+            <section class="section-about">
+                <h1 class="section-title">Sobre Nosaltres</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            New Style Boutique és una botiga de roba de dona
+                            situada a Barcelona. La nostra botiga ofereix una
+                            gran varietat de roba de dona, des de vestits de nit
+                            fins a roba de diari. La nostra botiga està situada
+                            al centre de Barcelona, a prop de la Plaça
+                            Catalunya. La nostra botiga està oberta de dilluns a
+                            dissabte de 10:00 a 20:00. Vine a visitar-nos i
+                            descobreix la nostra gran varietat de roba de dona.
+                        </p>
+                    </div>
+                    <img
+                        src="../images/store.png"
+                        alt="Botiga de roba"
+                        class="store-img"
+                    />
+                </div>
+                <h2 class="team-title">Equip</h2>
+                <div class="about-team">
+                    <div class="team-content">
+                        <div class="team-member">
+                            <img
+                                src="../images/director.png"
+                                alt="Membre de l'equip"
+                                class="team-member-img"
+                            />
+                            <h3 class="team-member-name">Susana</h3>
+                            <p class="team-member-role">Propietària</p>
+                        </div>
+                        <div class="team-member">
+                            <img
+                                src="../images/vendor1.png"
+                                alt="Membre de l'equip"
+                                class="team-member-img"
+                            />
+                            <h3 class="team-member-name">Enma</h3>
+                            <p class="team-member-role">Venedora</p>
+                        </div>
+                        <div class="team-member">
+                            <img
+                                src="../images/vendor3.png"
+                                alt="Membre de l'equip"
+                                class="team-member-img"
+                            />
+                            <h3 class="team-member-name">Núria</h3>
+                            <p class="team-member-role">Venedora</p>
+                        </div>
+                        <div class="team-member">
+                            <img
+                                src="../images/vendor2.png"
+                                alt="Membre de l'equip"
+                                class="team-member-img"
+                            />
+                            <h3 class="team-member-name">Adriana</h3>
+                            <p class="team-member-role">Venedora</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-gallery">
+                    <h2 class="gallery-title">Galeria</h2>
+                    <div class="gallery-content">
+                        <img
+                            src="../images/gallery1.jpg"
+                            alt="Galeria de roba"
+                            class="gallery-img"
+                        />
+                        <img
+                            src="../images/gallery2.jpg"
+                            alt="Galeria de roba"
+                            class="gallery-img"
+                        />
+                        <img
+                            src="../images/gallery3.jpg"
+                            alt="Galeria de roba"
+                            class="gallery-img"
+                        />
+                        <img
+                            src="../images/gallery4.jpg"
+                            alt="Galeria de roba"
+                            class="gallery-img"
+                        />
+                        <img
+                            src="../images/gallery5.jpg"
+                            alt="Galeria de roba"
+                            class="gallery-img"
+                        />
+                        <img
+                            src="../images/gallery6.jpg"
+                            alt="Galeria de roba"
+                            class="gallery-img"
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer>
             <div class="footer-content">
                 <div class="footer-section about">
                     <p class="footer-newsletter">
-                        T'agrada la curiositat? No et perdis res sobre
+                        T'agraden les tendencies de roba? No et perdis res sobre
                         nosaltres. Subscriu-te al nostre Butlletí i rep un 10%
                         de descompte en la teva pròxima compra.
                     </p>
@@ -95,43 +207,31 @@
                             name="email"
                             class="email-input"
                             placeholder="Correu electrònic..."
-                            aria-label="Your email"
+                            aria-label="Correu electrònic"
                             required
                         />
                         <button
                             type="submit"
                             class="btn-subscribe"
-                            aria-label="Subscribe"
+                            aria-label="Subscriure"
                         >
                             Enviar
                         </button>
                     </form>
                     <div class="socials">
                         <a href="https://www.facebook.com" aria-label="Facebook"
-                            ><i
-                                class="fab fa-facebook"
-                                aria-label="Visita'ns a Facebook"
-                            ></i
+                            ><i class="fab fa-facebook" aria-hidden="true"></i
                         ></a>
                         <a
                             href="https://www.instagram.com"
                             aria-label="Instagram"
-                            ><i
-                                class="fab fa-instagram"
-                                aria-label="Visita'ns a Instagram"
-                            ></i
+                            ><i class="fab fa-instagram" aria-hidden="true"></i
                         ></a>
                         <a href="https://www.twitter.com" aria-label="Twitter"
-                            ><i
-                                class="fab fa-twitter"
-                                aria-label="Visita'ns a Twitter"
-                            ></i
+                            ><i class="fab fa-twitter" aria-hidden="true"></i
                         ></a>
                         <a href="https://www.youtube.com" aria-label="Youtube"
-                            ><i
-                                class="fab fa-youtube"
-                                aria-label="Visita'ns a Youtube"
-                            ></i
+                            ><i class="fab fa-youtube" aria-hidden="true"></i
                         ></a>
                     </div>
                 </div>
@@ -139,17 +239,22 @@
                     <h4>VOLS SABER MÉS?</h4>
                     <ul>
                         <li>
-                            <a href="javascript:;" lang="ca">Esdeveniment</a>
+                            <a lang="ca">Esdeveniment</a>
                         </li>
-                        <li><a href="javascript:;" lang="ca">Equip</a></li>
-                        <li><a href="javascript:;" lang="ca">Galeria</a></li>
+                        <li><a lang="ca">Equip</a></li>
+                        <li><a lang="ca">Galeria</a></li>
                         <li>
-                            <a href="javascript:;" lang="ca"
-                                >Termes i Condicions</a
+                            <a href="../pdf/avisoLegal.pdf" lang="ca"
+                                >Avís Legal</a
                             >
                         </li>
                     </ul>
                 </div>
+                <img
+                    src="../images/flowers2.png"
+                    alt="Flors"
+                    class="flowers-img"
+                />
             </div>
             <div class="footer-bottom">
                 <p>
