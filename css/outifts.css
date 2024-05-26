@@ -13,6 +13,16 @@ article {
   margin: 5% 25% 5% 25%;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
+  padding: 3px;
+
+}
+
 .articleContent {
   font-family: Arial, sans-serif;
   display: flex;
@@ -20,6 +30,7 @@ article {
   align-items: center;
   justify-content: center;
 }
+
 @media screen and (max-width: 1600px) {
   .articleContent {
     text-align: center;
@@ -38,11 +49,12 @@ article img:nth-child(3) {
 }
 
 .grid-item {
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1vh;
-  justify-content: left;
+  align-items: left;
+  padding: 20px;
+  border-radius: 10px;
+  
 }
 
 .main-image {
@@ -52,10 +64,9 @@ article img:nth-child(3) {
   object-fit: cover;
 }
 
-
 .round-image {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -98,9 +109,4 @@ iframe {
 
 .carousel-control-next {
   right: 10px;
-}
-
-.home-content {
-  background-color: #f7efe2;
-  padding: 20px;
 }
